@@ -6,7 +6,7 @@
 //  Copyright © 2016 Anna Strzeżek. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for StuartDeliverySDK.
 FOUNDATION_EXPORT double StuartDeliverySDKVersionNumber;
@@ -14,6 +14,16 @@ FOUNDATION_EXPORT double StuartDeliverySDKVersionNumber;
 //! Project version string for StuartDeliverySDK.
 FOUNDATION_EXPORT const unsigned char StuartDeliverySDKVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <StuartDeliverySDK/PublicHeader.h>
+#import "StuartClient.h"
 
+#import "StuartOperation.h"
+#import "SignInOperation.h"
 
+#import "StuartAuthorization.h"
+
+#import "StuartNetworkService.h"
+
+#import "StuartRequest.h"
+#import "SignInRequest.h"
+
+#import "StuartConfiguration.h"
