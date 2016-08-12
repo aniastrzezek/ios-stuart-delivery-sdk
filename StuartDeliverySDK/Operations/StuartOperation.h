@@ -13,7 +13,6 @@
 
 @property (nonatomic, readonly) StuartNetworkService *networkService;
 @property (nonatomic, strong) id <StuartRequest> request;
-
-- (void)startWithCompletion:(void (^)(NSData *, NSError *))completion;
+@property (nonatomic, strong) void (^completion)(NSData *, NSError *);
 
 @end

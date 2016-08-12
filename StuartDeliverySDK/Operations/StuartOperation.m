@@ -23,9 +23,9 @@
     return self;
 }
 
-- (void)startWithCompletion:(void (^)(NSData *, NSError *))completion {
+- (void)start {
     [super start];
-    [self.networkService requestWithURL:self.request.url method:self.request.method parameters:self.request.parameters completion:completion];
+    [self.networkService requestWithURL:self.request.url method:self.request.method parameters:self.request.parameters completion:self.completion];
 }
 
 @end
