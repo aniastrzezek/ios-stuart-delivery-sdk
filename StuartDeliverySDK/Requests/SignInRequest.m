@@ -8,6 +8,7 @@
 
 #import "SignInRequest.h"
 #import "StuartConfiguration.h"
+#import "StuartClient.h"
 
 @interface SignInRequest ()
 
@@ -31,7 +32,13 @@
 }
 
 - (NSURL *)url {
-    return [StuartConfiguration sharedConfiguration].signInURL;
+    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:[StuartConfiguration sharedConfiguration].signInURL resolvingAgainstBaseURL:YES];
+    NSArray *queryItems = @[[NSURLQueryItem queryItemWithName:@"client_id" value:[StuartClient defaultClient].clientID],
+                            [NSURLQueryItem queryItemWithName:@"client_secret" value:[StuartClient defaultClient].clientSecret],
+                            [NSURLQueryItem queryItemWithName:@"response_type" value:@"code"],
+                            [NSURLQueryItem queryItemWithName:@"scope" value:@"api"]];
+    urlComponents.queryItems = queryItems;
+    return urlComponents.URL;
 }
 
 - (RequestMethod)method {

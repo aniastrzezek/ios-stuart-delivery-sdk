@@ -8,6 +8,11 @@
 
 #import "StuartClient.h"
 
+@interface StuartClient ()
+@property (nonatomic, strong) NSString *clientID;
+@property (nonatomic, strong) NSString *clientSecret;
+@end
+
 @implementation StuartClient
 
 + (instancetype)defaultClient {
@@ -18,6 +23,11 @@
         defaultInstance = [[self alloc] init];
     });
     return defaultInstance;
+}
+
+- (void)setClientID:(NSString *)clientID clientSecret:(NSString *)clientSecret {
+    self.clientID = clientID;
+    self.clientSecret = clientSecret;
 }
 
 @end

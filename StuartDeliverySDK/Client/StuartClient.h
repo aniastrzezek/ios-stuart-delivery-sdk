@@ -12,4 +12,9 @@
 
 + (instancetype)defaultClient;
 
+@property (nonatomic, readonly) NSString *clientID;
+@property (nonatomic, readonly) NSString *clientSecret;
+
+- (void)setClientID:(NSString *)clientID clientSecret:(NSString *)clientSecret;
+
 @end
