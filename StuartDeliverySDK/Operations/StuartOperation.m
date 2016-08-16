@@ -23,9 +23,5 @@
     return self;
 }
 
-- (void)start {
-    [super start];
-    [self.networkService requestWithURL:self.request.url method:self.request.method parameters:self.request.parameters completion:self.completion];
-}
 
 @end

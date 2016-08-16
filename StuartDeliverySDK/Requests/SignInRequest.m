@@ -51,8 +51,4 @@
              @"grant_type": self.grantType};
 }
 
-- (NSDictionary *)headers {
-    return @{@"Content-Type": @"application/x-www-form-urlencoded"};
-}
-
 @end

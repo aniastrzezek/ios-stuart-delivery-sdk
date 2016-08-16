@@ -7,9 +7,12 @@
 //
 
 #import "StuartOperation.h"
+#import "StuartUser.h"
 
 @interface SignInOperation : StuartOperation
 
 - (instancetype)initWithUsername:(NSString *)username password:(NSString *)password;
+
+@property (nonatomic, strong) void (^completion)(StuartUser *, NSError *);
 
 @end

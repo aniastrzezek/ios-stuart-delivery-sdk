@@ -8,6 +8,8 @@
 
 #import "SignInOperation.h"
 #import "SignInRequest.h"
+#import "UserMapper.h"
+#import "StuartAuthorization.h"
 
 @implementation SignInOperation
 
@@ -19,5 +21,16 @@
     }
     return self;
 }
+
+- (void)start {
+    [super start];
+    [self.networkService requestWithURL:self.request.url method:self.request.method parameters:self.request.parameters completion:^(NSDictionary *json, NSError *error) {
+        [StuartAuthorization sharedAuthorization].token = json[StuartTokenKey];
+        
+        StuartUser *user = [UserMapper userWithData:json];
+        self.completion(user, error);
+    }];
+}
+
 
 @end

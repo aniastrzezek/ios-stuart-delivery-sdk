@@ -23,6 +23,10 @@
 		2CA9F84E1D5DF4FD001FCF07 /* StuartOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9F84C1D5DF4FD001FCF07 /* StuartOperation.m */; };
 		2CA9F8521D5DF79C001FCF07 /* StuartNetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA9F8501D5DF79C001FCF07 /* StuartNetworkService.h */; };
 		2CA9F8531D5DF79C001FCF07 /* StuartNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9F8511D5DF79C001FCF07 /* StuartNetworkService.m */; };
+		2CF547F11D61FE8A00039EB8 /* StuartUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF547EF1D61FE8A00039EB8 /* StuartUser.h */; };
+		2CF547F21D61FE8A00039EB8 /* StuartUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF547F01D61FE8A00039EB8 /* StuartUser.m */; };
+		2CF547F61D624B0000039EB8 /* UserMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF547F41D624B0000039EB8 /* UserMapper.h */; };
+		2CF547F71D624B0000039EB8 /* UserMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF547F51D624B0000039EB8 /* UserMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		2CA9F84C1D5DF4FD001FCF07 /* StuartOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartOperation.m; sourceTree = "<group>"; };
 		2CA9F8501D5DF79C001FCF07 /* StuartNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartNetworkService.h; sourceTree = "<group>"; };
 		2CA9F8511D5DF79C001FCF07 /* StuartNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartNetworkService.m; sourceTree = "<group>"; };
+		2CF547EF1D61FE8A00039EB8 /* StuartUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartUser.h; sourceTree = "<group>"; };
+		2CF547F01D61FE8A00039EB8 /* StuartUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartUser.m; sourceTree = "<group>"; };
+		2CF547F41D624B0000039EB8 /* UserMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMapper.h; sourceTree = "<group>"; };
+		2CF547F51D624B0000039EB8 /* UserMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,8 @@
 		2CA9F8201D5D0818001FCF07 /* StuartDeliverySDK */ = {
 			isa = PBXGroup;
 			children = (
+				2CF547F31D624AAC00039EB8 /* Mappers */,
+				2CF547EE1D61FE7700039EB8 /* Model */,
 				2C6403A91D5E117F006CC0AA /* Authorization */,
 				2CA9F84F1D5DF762001FCF07 /* Operations */,
 				2CA9F84A1D5DF096001FCF07 /* Network */,
@@ -145,6 +155,24 @@
 			path = Operations;
 			sourceTree = "<group>";
 		};
+		2CF547EE1D61FE7700039EB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CF547EF1D61FE8A00039EB8 /* StuartUser.h */,
+				2CF547F01D61FE8A00039EB8 /* StuartUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CF547F31D624AAC00039EB8 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				2CF547F41D624B0000039EB8 /* UserMapper.h */,
+				2CF547F51D624B0000039EB8 /* UserMapper.m */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -152,12 +180,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF547F11D61FE8A00039EB8 /* StuartUser.h in Headers */,
 				2CA9F83B1D5DE721001FCF07 /* StuartConfiguration.h in Headers */,
 				2CA9F84D1D5DF4FD001FCF07 /* StuartOperation.h in Headers */,
 				2CA9F8481D5DEA34001FCF07 /* SignInRequest.h in Headers */,
 				2CA9F8401D5DE8A3001FCF07 /* StuartRequest.h in Headers */,
 				2C6403B01D5E1EC4006CC0AA /* SignInOperation.h in Headers */,
 				2CA9F82D1D5DD89E001FCF07 /* StuartClient.h in Headers */,
+				2CF547F61D624B0000039EB8 /* UserMapper.h in Headers */,
 				2CA9F8521D5DF79C001FCF07 /* StuartNetworkService.h in Headers */,
 				2CA9F8221D5D0818001FCF07 /* StuartDeliverySDK.h in Headers */,
 				2C6403AC1D5E1193006CC0AA /* StuartAuthorization.h in Headers */,
@@ -233,9 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA9F84E1D5DF4FD001FCF07 /* StuartOperation.m in Sources */,
+				2CF547F21D61FE8A00039EB8 /* StuartUser.m in Sources */,
 				2C6403B11D5E1EC4006CC0AA /* SignInOperation.m in Sources */,
 				2CA9F82E1D5DD89E001FCF07 /* StuartClient.m in Sources */,
 				2C6403AD1D5E1193006CC0AA /* StuartAuthorization.m in Sources */,
+				2CF547F71D624B0000039EB8 /* UserMapper.m in Sources */,
 				2CA9F8491D5DEA34001FCF07 /* SignInRequest.m in Sources */,
 				2CA9F83C1D5DE721001FCF07 /* StuartConfiguration.m in Sources */,
 				2CA9F8531D5DF79C001FCF07 /* StuartNetworkService.m in Sources */,

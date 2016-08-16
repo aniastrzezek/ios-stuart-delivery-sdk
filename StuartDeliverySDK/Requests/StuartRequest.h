@@ -20,6 +20,5 @@ typedef enum : NSUInteger {
 @property (nonatomic, readonly) NSURL *url;
 @property (nonatomic, readonly) RequestMethod method;
 @property (nonatomic, readonly) NSDictionary *parameters;
-@property (nonatomic, readonly) NSDictionary *headers;
 
 @end

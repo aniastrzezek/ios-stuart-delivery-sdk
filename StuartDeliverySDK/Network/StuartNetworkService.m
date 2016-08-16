@@ -9,9 +9,22 @@
 #import "StuartNetworkService.h"
 #import "StuartAuthorization.h"
 
+NSString *const StuartDateCreatedKey = @"createdAt";
+NSString *const StuartEmailKey = @"email";
+NSString *const StuartFirstnameKey = @"firstname";
+NSString *const StuartIDKey = @"id";
+NSString *const StuartLastnameKey = @"lastname";
+NSString *const StuartLastnameInitialKey = @"lastnameInitial";
+NSString *const StuartPhoneKey = @"phone";
+NSString *const StuartPicturePathKey = @"picturePath";
+NSString *const StuartRatingKey = @"ratingAvg";
+NSString *const StuartRefreshTokenKey = @"refreshToken";
+NSString *const StuartTokenKey = @"token";
+
+
 @implementation StuartNetworkService
 
-- (void)requestWithURL:(NSURL *)url method:(RequestMethod)method parameters:(NSDictionary *)parameters completion:(void (^)(NSData *, NSError *))completion {
+- (void)requestWithURL:(NSURL *)url method:(RequestMethod)method parameters:(NSDictionary *)parameters completion:(void (^)(NSDictionary *, NSError *))completion {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:10];
     request.allHTTPHeaderFields = self.headers;
     request.HTTPMethod = [self nameForRequestMethod:method];
@@ -22,7 +35,8 @@
     
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        completion(data, error);
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        completion(json, error);
     }];
     
     [task resume];

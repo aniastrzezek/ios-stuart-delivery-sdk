@@ -9,8 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "StuartRequest.h"
 
+extern NSString *const StuartDateCreatedKey;
+extern NSString *const StuartEmailKey;
+extern NSString *const StuartFirstnameKey;
+extern NSString *const StuartIDKey;
+extern NSString *const StuartLastnameKey;
+extern NSString *const StuartLastnameInitialKey;
+extern NSString *const StuartPhoneKey;
+extern NSString *const StuartPicturePathKey;
+extern NSString *const StuartRatingKey;
+extern NSString *const StuartRefreshTokenKey;
+extern NSString *const StuartTokenKey;
+
 @interface StuartNetworkService : NSObject
 
-- (void)requestWithURL:(NSURL *)url method:(RequestMethod)method parameters:(NSDictionary *)parameters completion:(void (^)(NSData *data, NSError *error))completion;
+- (void)requestWithURL:(NSURL *)url method:(RequestMethod)method parameters:(NSDictionary *)parameters completion:(void (^)(NSDictionary *json, NSError *error))completion;
 
 @end
