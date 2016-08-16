@@ -11,15 +11,15 @@
 
 @interface StuartUserBuilder : NSObject 
 
-@property (nonatomic, strong) NSDate *dateCreated;
-@property (nonatomic, strong) NSString *email;
-@property (nonatomic, strong) NSString *firstname;
-@property (nonatomic, strong) NSString *userID;
-@property (nonatomic, strong) NSString *lastname;
-@property (nonatomic, strong) NSString *lastnameInitial;
-@property (nonatomic, strong) NSString *phone;
-@property (nonatomic, strong) NSString *picturePath;
-@property (nonatomic, assign) NSUInteger rating;
+@property (nonatomic, copy) NSDate *dateCreated;
+@property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy) NSString *firstname;
+@property (nonatomic, copy) NSString *userID;
+@property (nonatomic, copy) NSString *lastname;
+@property (nonatomic, copy) NSString *lastnameInitial;
+@property (nonatomic, copy) NSString *phone;
+@property (nonatomic, copy) NSString *picturePath;
+@property (nonatomic, copy) NSString *rating;
 
 - (StuartUser *)build;
 
@@ -39,6 +39,6 @@
 @property (nonatomic, readonly) NSString *lastnameInitial;
 @property (nonatomic, readonly) NSString *phone;
 @property (nonatomic, readonly) NSString *picturePath;
-@property (nonatomic, readonly) NSUInteger rating;
+@property (nonatomic, readonly) NSString *rating;
 
 @end

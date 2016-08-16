@@ -8,6 +8,7 @@
 
 #import "UserMapper.h"
 #import "StuartNetworkService.h"
+#import "NSObject+NilIfNull.h"
 
 @implementation UserMapper
 
@@ -16,15 +17,15 @@
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
         dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZ";
 
-        builder.dateCreated = [dateFormatter dateFromString:data[StuartDateCreatedKey]];
-        builder.email = data[StuartEmailKey];
-        builder.firstname = data[StuartFirstnameKey];
-        builder.userID = data[StuartIDKey];
-        builder.lastname = data[StuartLastnameKey];
-        builder.lastnameInitial = data[StuartLastnameInitialKey];
-        builder.phone = data[StuartPhoneKey];
-        builder.picturePath = data[StuartPicturePathKey];
-        builder.rating = [data[StuartRatingKey] integerValue];
+        builder.dateCreated = [dateFormatter dateFromString:[data[StuartDateCreatedKey] nilIfNull]];
+        builder.email = [data[StuartEmailKey] nilIfNull];
+        builder.firstname = [data[StuartFirstnameKey] nilIfNull];
+        builder.userID = [data[StuartIDKey] nilIfNull];
+        builder.lastname = [data[StuartLastnameKey] nilIfNull];
+        builder.lastnameInitial = [data[StuartLastnameInitialKey] nilIfNull];
+        builder.phone = [data[StuartPhoneKey] nilIfNull];
+        builder.picturePath = [data[StuartPicturePathKey] nilIfNull];
+        builder.rating = [data[StuartRatingKey] nilIfNull];
     }];
     return user;
 }

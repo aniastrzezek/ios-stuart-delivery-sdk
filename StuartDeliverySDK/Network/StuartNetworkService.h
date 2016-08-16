@@ -20,6 +20,10 @@ extern NSString *const StuartPicturePathKey;
 extern NSString *const StuartRatingKey;
 extern NSString *const StuartRefreshTokenKey;
 extern NSString *const StuartTokenKey;
+extern NSString *const StuartErrorsKey;
+extern NSString *const StuartCodeKey;
+extern NSString *const StuartKeyKey;
+extern NSString *const StuartMessageKey;
 
 @interface StuartNetworkService : NSObject
 

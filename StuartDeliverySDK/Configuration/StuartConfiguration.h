@@ -13,5 +13,6 @@
 + (instancetype)sharedConfiguration;
 
 @property (nonatomic, readonly) NSURL *signInURL;
+@property (nonatomic, readonly) NSURL *createPlaceURL;
 
 @end

@@ -27,6 +27,18 @@
 		2CF547F21D61FE8A00039EB8 /* StuartUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF547F01D61FE8A00039EB8 /* StuartUser.m */; };
 		2CF547F61D624B0000039EB8 /* UserMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF547F41D624B0000039EB8 /* UserMapper.h */; };
 		2CF547F71D624B0000039EB8 /* UserMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF547F51D624B0000039EB8 /* UserMapper.m */; };
+		2CF547FA1D63621A00039EB8 /* CreatePlaceOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF547F81D63621A00039EB8 /* CreatePlaceOperation.h */; };
+		2CF547FB1D63621A00039EB8 /* CreatePlaceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF547F91D63621A00039EB8 /* CreatePlaceOperation.m */; };
+		2CF547FE1D63623500039EB8 /* StuartPlace.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF547FC1D63623500039EB8 /* StuartPlace.h */; };
+		2CF547FF1D63623500039EB8 /* StuartPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF547FD1D63623500039EB8 /* StuartPlace.m */; };
+		2CF548021D63627E00039EB8 /* PlaceMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF548001D63627E00039EB8 /* PlaceMapper.h */; };
+		2CF548031D63627E00039EB8 /* PlaceMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF548011D63627E00039EB8 /* PlaceMapper.m */; };
+		2CF548061D6363AA00039EB8 /* CreatePlaceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF548041D6363AA00039EB8 /* CreatePlaceRequest.h */; };
+		2CF548071D6363AA00039EB8 /* CreatePlaceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF548051D6363AA00039EB8 /* CreatePlaceRequest.m */; };
+		2CF5480B1D636F2700039EB8 /* NSObject+NilIfNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF548091D636F2700039EB8 /* NSObject+NilIfNull.h */; };
+		2CF5480C1D636F2700039EB8 /* NSObject+NilIfNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5480A1D636F2700039EB8 /* NSObject+NilIfNull.m */; };
+		2CF5480F1D63824500039EB8 /* NSError+Stuart.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF5480D1D63824500039EB8 /* NSError+Stuart.h */; };
+		2CF548101D63824500039EB8 /* NSError+Stuart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5480E1D63824500039EB8 /* NSError+Stuart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +64,18 @@
 		2CF547F01D61FE8A00039EB8 /* StuartUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartUser.m; sourceTree = "<group>"; };
 		2CF547F41D624B0000039EB8 /* UserMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMapper.h; sourceTree = "<group>"; };
 		2CF547F51D624B0000039EB8 /* UserMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMapper.m; sourceTree = "<group>"; };
+		2CF547F81D63621A00039EB8 /* CreatePlaceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePlaceOperation.h; sourceTree = "<group>"; };
+		2CF547F91D63621A00039EB8 /* CreatePlaceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePlaceOperation.m; sourceTree = "<group>"; };
+		2CF547FC1D63623500039EB8 /* StuartPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartPlace.h; sourceTree = "<group>"; };
+		2CF547FD1D63623500039EB8 /* StuartPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartPlace.m; sourceTree = "<group>"; };
+		2CF548001D63627E00039EB8 /* PlaceMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceMapper.h; sourceTree = "<group>"; };
+		2CF548011D63627E00039EB8 /* PlaceMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceMapper.m; sourceTree = "<group>"; };
+		2CF548041D6363AA00039EB8 /* CreatePlaceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePlaceRequest.h; sourceTree = "<group>"; };
+		2CF548051D6363AA00039EB8 /* CreatePlaceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePlaceRequest.m; sourceTree = "<group>"; };
+		2CF548091D636F2700039EB8 /* NSObject+NilIfNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NilIfNull.h"; sourceTree = "<group>"; };
+		2CF5480A1D636F2700039EB8 /* NSObject+NilIfNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NilIfNull.m"; sourceTree = "<group>"; };
+		2CF5480D1D63824500039EB8 /* NSError+Stuart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Stuart.h"; sourceTree = "<group>"; };
+		2CF5480E1D63824500039EB8 /* NSError+Stuart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Stuart.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +117,7 @@
 		2CA9F8201D5D0818001FCF07 /* StuartDeliverySDK */ = {
 			isa = PBXGroup;
 			children = (
+				2CF548081D636EE400039EB8 /* Helpers */,
 				2CF547F31D624AAC00039EB8 /* Mappers */,
 				2CF547EE1D61FE7700039EB8 /* Model */,
 				2C6403A91D5E117F006CC0AA /* Authorization */,
@@ -131,6 +156,8 @@
 				2CA9F83E1D5DE8A3001FCF07 /* StuartRequest.h */,
 				2CA9F8461D5DEA34001FCF07 /* SignInRequest.h */,
 				2CA9F8471D5DEA34001FCF07 /* SignInRequest.m */,
+				2CF548041D6363AA00039EB8 /* CreatePlaceRequest.h */,
+				2CF548051D6363AA00039EB8 /* CreatePlaceRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -151,6 +178,8 @@
 				2CA9F84C1D5DF4FD001FCF07 /* StuartOperation.m */,
 				2C6403AE1D5E1EC4006CC0AA /* SignInOperation.h */,
 				2C6403AF1D5E1EC4006CC0AA /* SignInOperation.m */,
+				2CF547F81D63621A00039EB8 /* CreatePlaceOperation.h */,
+				2CF547F91D63621A00039EB8 /* CreatePlaceOperation.m */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -160,6 +189,8 @@
 			children = (
 				2CF547EF1D61FE8A00039EB8 /* StuartUser.h */,
 				2CF547F01D61FE8A00039EB8 /* StuartUser.m */,
+				2CF547FC1D63623500039EB8 /* StuartPlace.h */,
+				2CF547FD1D63623500039EB8 /* StuartPlace.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,8 +200,21 @@
 			children = (
 				2CF547F41D624B0000039EB8 /* UserMapper.h */,
 				2CF547F51D624B0000039EB8 /* UserMapper.m */,
+				2CF548001D63627E00039EB8 /* PlaceMapper.h */,
+				2CF548011D63627E00039EB8 /* PlaceMapper.m */,
 			);
 			path = Mappers;
+			sourceTree = "<group>";
+		};
+		2CF548081D636EE400039EB8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2CF548091D636F2700039EB8 /* NSObject+NilIfNull.h */,
+				2CF5480A1D636F2700039EB8 /* NSObject+NilIfNull.m */,
+				2CF5480D1D63824500039EB8 /* NSError+Stuart.h */,
+				2CF5480E1D63824500039EB8 /* NSError+Stuart.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,12 +225,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF547F11D61FE8A00039EB8 /* StuartUser.h in Headers */,
+				2CF548061D6363AA00039EB8 /* CreatePlaceRequest.h in Headers */,
 				2CA9F83B1D5DE721001FCF07 /* StuartConfiguration.h in Headers */,
+				2CF547FA1D63621A00039EB8 /* CreatePlaceOperation.h in Headers */,
 				2CA9F84D1D5DF4FD001FCF07 /* StuartOperation.h in Headers */,
 				2CA9F8481D5DEA34001FCF07 /* SignInRequest.h in Headers */,
 				2CA9F8401D5DE8A3001FCF07 /* StuartRequest.h in Headers */,
 				2C6403B01D5E1EC4006CC0AA /* SignInOperation.h in Headers */,
+				2CF548021D63627E00039EB8 /* PlaceMapper.h in Headers */,
+				2CF5480F1D63824500039EB8 /* NSError+Stuart.h in Headers */,
 				2CA9F82D1D5DD89E001FCF07 /* StuartClient.h in Headers */,
+				2CF5480B1D636F2700039EB8 /* NSObject+NilIfNull.h in Headers */,
+				2CF547FE1D63623500039EB8 /* StuartPlace.h in Headers */,
 				2CF547F61D624B0000039EB8 /* UserMapper.h in Headers */,
 				2CA9F8521D5DF79C001FCF07 /* StuartNetworkService.h in Headers */,
 				2CA9F8221D5D0818001FCF07 /* StuartDeliverySDK.h in Headers */,
@@ -263,14 +313,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA9F84E1D5DF4FD001FCF07 /* StuartOperation.m in Sources */,
+				2CF548071D6363AA00039EB8 /* CreatePlaceRequest.m in Sources */,
 				2CF547F21D61FE8A00039EB8 /* StuartUser.m in Sources */,
+				2CF5480C1D636F2700039EB8 /* NSObject+NilIfNull.m in Sources */,
 				2C6403B11D5E1EC4006CC0AA /* SignInOperation.m in Sources */,
+				2CF547FB1D63621A00039EB8 /* CreatePlaceOperation.m in Sources */,
+				2CF548101D63824500039EB8 /* NSError+Stuart.m in Sources */,
 				2CA9F82E1D5DD89E001FCF07 /* StuartClient.m in Sources */,
 				2C6403AD1D5E1193006CC0AA /* StuartAuthorization.m in Sources */,
 				2CF547F71D624B0000039EB8 /* UserMapper.m in Sources */,
 				2CA9F8491D5DEA34001FCF07 /* SignInRequest.m in Sources */,
 				2CA9F83C1D5DE721001FCF07 /* StuartConfiguration.m in Sources */,
 				2CA9F8531D5DF79C001FCF07 /* StuartNetworkService.m in Sources */,
+				2CF548031D63627E00039EB8 /* PlaceMapper.m in Sources */,
+				2CF547FF1D63623500039EB8 /* StuartPlace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

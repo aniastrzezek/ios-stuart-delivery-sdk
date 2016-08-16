@@ -27,7 +27,7 @@
     [self.networkService requestWithURL:self.request.url method:self.request.method parameters:self.request.parameters completion:^(NSDictionary *json, NSError *error) {
         [StuartAuthorization sharedAuthorization].token = json[StuartTokenKey];
         
-        StuartUser *user = [UserMapper userWithData:json];
+        StuartUser *user = error ? nil : [UserMapper userWithData:json];
         self.completion(user, error);
     }];
 }

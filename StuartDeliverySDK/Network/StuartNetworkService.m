@@ -8,6 +8,7 @@
 
 #import "StuartNetworkService.h"
 #import "StuartAuthorization.h"
+#import "NSError+Stuart.h"
 
 NSString *const StuartDateCreatedKey = @"createdAt";
 NSString *const StuartEmailKey = @"email";
@@ -20,7 +21,10 @@ NSString *const StuartPicturePathKey = @"picturePath";
 NSString *const StuartRatingKey = @"ratingAvg";
 NSString *const StuartRefreshTokenKey = @"refreshToken";
 NSString *const StuartTokenKey = @"token";
-
+NSString *const StuartErrorsKey = @"errors";
+NSString *const StuartCodeKey = @"code";
+NSString *const StuartKeyKey = @"key";
+NSString *const StuartMessageKey = @"message";
 
 @implementation StuartNetworkService
 
@@ -36,6 +40,13 @@ NSString *const StuartTokenKey = @"token";
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        NSArray *errors = json[StuartErrorsKey];
+        if (errors.count) {
+            NSUInteger firstErrorCode = [errors.firstObject[StuartCodeKey] integerValue];
+            NSString *firstErrorMessage = errors.firstObject[StuartMessageKey];
+            error = [NSError stuartErrorWithCode:firstErrorCode message:firstErrorMessage];
+        }
+        
         completion(json, error);
     }];
     

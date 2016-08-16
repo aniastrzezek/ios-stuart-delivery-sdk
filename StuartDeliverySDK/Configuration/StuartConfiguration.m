@@ -27,6 +27,9 @@
     return [NSURL URLWithString:@"/v1/clients/login" relativeToURL:self.baseURL];
 }
 
+- (NSURL *)createPlaceURL {
+    return [NSURL URLWithString:@"/v1/places" relativeToURL:self.baseURL];    
+}
 
 - (NSURL *)baseURL {
     return [NSURL URLWithString:@"https://sandbox-api.stuart.com"];
