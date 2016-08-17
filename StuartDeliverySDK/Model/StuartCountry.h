@@ -8,8 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import "StuartCurrency.h"
+@class StuartCountry;
+
+@interface StuartCountryBuilder : NSObject
+
+@property (nonatomic, copy) NSString *countryID;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *iso2Code;
+@property (nonatomic, copy) StuartCurrency *defaultCurrency;
+
+- (StuartCountry *)build;
+
+@end
 
 @interface StuartCountry : NSObject
+
+- (instancetype)initWithBuilder:(StuartCountryBuilder *)builder;
+
++ (instancetype)countryWithBlock:(void (^)(StuartCountryBuilder *))builderBlock;
 
 @property (nonatomic, readonly) NSString *countryID;
 @property (nonatomic, readonly) NSString *name;

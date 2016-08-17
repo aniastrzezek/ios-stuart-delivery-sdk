@@ -8,13 +8,40 @@
 
 #import <Foundation/Foundation.h>
 #import "StuartAddress.h"
+@class StuartPlace;
 
 typedef NS_ENUM(NSUInteger, StuartPlaceType) {
     StuartPlaceTypePicking = 2,
     StuartPlaceTypeDelivering = 3
 };
 
+@interface StuartPlaceBuilder : NSObject
+
+@property (nonatomic, copy) NSString *placeID;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *createdAt;
+@property (nonatomic, copy) NSString *updatedAt;
+@property (nonatomic, copy) StuartAddress *address;
+@property (nonatomic, assign) StuartPlaceType placeType;
+@property (nonatomic, copy) NSString *clientReference;
+@property (nonatomic, copy) NSString *comment;
+
+@property (nonatomic, copy) NSString *contactFirstname;
+@property (nonatomic, copy) NSString *contactLastname;
+@property (nonatomic, copy) NSString *contactCompany;
+@property (nonatomic, copy) NSString *contactEmail;
+@property (nonatomic, copy) NSString *contactPhone;
+
+- (StuartPlace *)build;
+
+@end
+
+
 @interface StuartPlace : NSObject
+
+- (instancetype)initWithBuilder:(StuartPlaceBuilder *)builder;
+
++ (instancetype)placeWithBlock:(void (^)(StuartPlaceBuilder *))builderBlock;
 
 @property (nonatomic, readonly) NSString *placeID;
 @property (nonatomic, readonly) NSString *name;
