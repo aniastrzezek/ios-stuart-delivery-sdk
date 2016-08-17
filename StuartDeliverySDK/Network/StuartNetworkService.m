@@ -10,7 +10,6 @@
 #import "StuartAuthorization.h"
 #import "NSError+Stuart.h"
 
-NSString *const StuartDateCreatedKey = @"createdAt";
 NSString *const StuartEmailKey = @"email";
 NSString *const StuartFirstnameKey = @"firstname";
 NSString *const StuartIDKey = @"id";
@@ -22,9 +21,35 @@ NSString *const StuartRatingKey = @"ratingAvg";
 NSString *const StuartRefreshTokenKey = @"refreshToken";
 NSString *const StuartTokenKey = @"token";
 NSString *const StuartErrorsKey = @"errors";
-NSString *const StuartCodeKey = @"code";
 NSString *const StuartKeyKey = @"key";
 NSString *const StuartMessageKey = @"message";
+NSString *const StuartAccuracyKey = @"accuracy";
+NSString *const StuartAddressKey = @"address";
+NSString *const StuartCityKey = @"city";
+NSString *const StuartClientReferenceKey = @"clientReference";
+NSString *const StuartCodeKey = @"code";
+NSString *const StuartCommentKey = @"comment";
+NSString *const StuartContactCompanyKey = @"contactCompany";
+NSString *const StuartContactEmailKey = @"contactEmail";
+NSString *const StuartContactFirstnameKey = @"contactFirstname";
+NSString *const StuartContactLastnameKey = @"contactLastname";
+NSString *const StuartContactPhoneKey = @"contactPhone";
+NSString *const StuartCountryKey = @"country";
+NSString *const StuartCreatedAtKey = @"createdAt";
+NSString *const StuartDefaultCurrencyKey = @"defaultCurrency";
+NSString *const StuartIso2CodeKey = @"iso2Code";
+NSString *const StuartIsoCodeKey = @"isoCode";
+NSString *const StuartLatitudeKey = @"latitude";
+NSString *const StuartLongitudeKey = @"longitude";
+NSString *const StuartNameKey = @"name";
+NSString *const StuartPlaceTypeKey = @"placeType";
+NSString *const StuartPostcodeKey = @"postcode";
+NSString *const StuartRateKey = @"rate";
+NSString *const StuartRegionKey = @"region";
+NSString *const StuartStreetKey = @"street";
+NSString *const StuartSymbolKey = @"symbol";
+NSString *const StuartTimezoneKey = @"timezone";
+NSString *const StuartUpdatedAtKey = @"updatedAt";
 
 @implementation StuartNetworkService
 

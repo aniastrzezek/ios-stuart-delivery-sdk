@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "StuartRequest.h"
 
-extern NSString *const StuartDateCreatedKey;
 extern NSString *const StuartEmailKey;
 extern NSString *const StuartFirstnameKey;
 extern NSString *const StuartIDKey;
@@ -24,6 +23,34 @@ extern NSString *const StuartErrorsKey;
 extern NSString *const StuartCodeKey;
 extern NSString *const StuartKeyKey;
 extern NSString *const StuartMessageKey;
+extern NSString *const StuartAccuracyKey;
+extern NSString *const StuartAddressKey;
+extern NSString *const StuartCityKey;
+extern NSString *const StuartClientReferenceKey;
+extern NSString *const StuartCodeKey;
+extern NSString *const StuartCommentKey;
+extern NSString *const StuartContactCompanyKey;
+extern NSString *const StuartContactEmailKey;
+extern NSString *const StuartContactFirstnameKey;
+extern NSString *const StuartContactLastnameKey;
+extern NSString *const StuartContactPhoneKey;
+extern NSString *const StuartCountryKey;
+extern NSString *const StuartCreatedAtKey;
+extern NSString *const StuartDefaultCurrencyKey;
+extern NSString *const StuartIdKey;
+extern NSString *const StuartIso2CodeKey;
+extern NSString *const StuartIsoCodeKey;
+extern NSString *const StuartLatitudeKey;
+extern NSString *const StuartLongitudeKey;
+extern NSString *const StuartNameKey;
+extern NSString *const StuartPlaceTypeKey;
+extern NSString *const StuartPostcodeKey;
+extern NSString *const StuartRateKey;
+extern NSString *const StuartRegionKey;
+extern NSString *const StuartStreetKey;
+extern NSString *const StuartSymbolKey;
+extern NSString *const StuartTimezoneKey;
+extern NSString *const StuartUpdatedAtKey;
 
 @interface StuartNetworkService : NSObject
 

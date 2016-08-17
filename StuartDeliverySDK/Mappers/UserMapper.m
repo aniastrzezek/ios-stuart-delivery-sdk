@@ -17,7 +17,7 @@
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
         dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZ";
 
-        builder.dateCreated = [dateFormatter dateFromString:[data[StuartDateCreatedKey] nilIfNull]];
+        builder.dateCreated = [dateFormatter dateFromString:[data[StuartCreatedAtKey] nilIfNull]];
         builder.email = [data[StuartEmailKey] nilIfNull];
         builder.firstname = [data[StuartFirstnameKey] nilIfNull];
         builder.userID = [data[StuartIDKey] nilIfNull];
