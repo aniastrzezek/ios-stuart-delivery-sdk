@@ -19,20 +19,20 @@
 
 @interface StuartPlace ()
 
-@property (nonatomic, strong) NSString *placeID;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *createdAt;
-@property (nonatomic, strong) NSString *updatedAt;
+@property (nonatomic, copy) NSString *placeID;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSDate *createdAt;
+@property (nonatomic, strong) NSDate *updatedAt;
 @property (nonatomic, strong) StuartAddress *address;
 @property (nonatomic, assign) StuartPlaceType placeType;
-@property (nonatomic, strong) NSString *clientReference;
-@property (nonatomic, strong) NSString *comment;
+@property (nonatomic, copy) NSString *clientReference;
+@property (nonatomic, copy) NSString *comment;
 
-@property (nonatomic, strong) NSString *contactFirstname;
-@property (nonatomic, strong) NSString *contactLastname;
-@property (nonatomic, strong) NSString *contactCompany;
-@property (nonatomic, strong) NSString *contactEmail;
-@property (nonatomic, strong) NSString *contactPhone;
+@property (nonatomic, copy) NSString *contactFirstname;
+@property (nonatomic, copy) NSString *contactLastname;
+@property (nonatomic, copy) NSString *contactCompany;
+@property (nonatomic, copy) NSString *contactEmail;
+@property (nonatomic, copy) NSString *contactPhone;
 
 @end
 
@@ -72,5 +72,6 @@
     NSString *descriptionString = [NSString stringWithFormat:@"<%@: %p> id: %@; name: %@; type: %lu;", self.class, self, self.placeID, self.name, (unsigned long)self.placeType];
     return descriptionString;
 }
+
 
 @end

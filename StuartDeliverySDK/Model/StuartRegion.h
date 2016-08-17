@@ -13,7 +13,7 @@
 @interface StuartRegionBuilder : NSObject
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) StuartCountry *country;
+@property (nonatomic, strong) StuartCountry *country;
 
 - (StuartRegion *)build;
 

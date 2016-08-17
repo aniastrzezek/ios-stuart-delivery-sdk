@@ -19,14 +19,14 @@
 
 @interface StuartAddress ()
 
-@property (nonatomic, strong) NSString *addressID;
-@property (nonatomic, strong) NSString *street;
-@property (nonatomic, strong) NSString *postcode;
+@property (nonatomic, copy) NSString *addressID;
+@property (nonatomic, copy) NSString *street;
+@property (nonatomic, copy) NSString *postcode;
 @property (nonatomic, strong) StuartCity *city;
 @property (nonatomic, strong) CLLocation *location;
-@property (nonatomic, assign) NSInteger *accuracy;
-@property (nonatomic, strong) NSDate *createdAt;
-@property (nonatomic, strong) NSDate *updatedAt;
+@property (nonatomic, copy) NSNumber *accuracy;
+@property (nonatomic, copy) NSDate *createdAt;
+@property (nonatomic, copy) NSDate *updatedAt;
 
 @end
 
@@ -61,5 +61,6 @@
     NSString *descriptionString = [NSString stringWithFormat:@"<%@: %p> id: %@; accuracy: %ld; street: %@; postcode: %@; city: %@;", self.class, self, self.addressID, (long)self.accuracy, self.street, self.postcode, self.city];
     return descriptionString;
 }
+
 
 @end

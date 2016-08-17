@@ -11,7 +11,7 @@
 
 @interface StuartUserBuilder : NSObject 
 
-@property (nonatomic, copy) NSDate *dateCreated;
+@property (nonatomic, strong) NSDate *dateCreated;
 @property (nonatomic, copy) NSString *email;
 @property (nonatomic, copy) NSString *firstname;
 @property (nonatomic, copy) NSString *userID;

@@ -18,11 +18,11 @@
 
 @interface StuartCity ()
 
-@property (nonatomic, strong) NSString *cityID;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *code;
+@property (nonatomic, copy) NSString *cityID;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *code;
 @property (nonatomic, strong) StuartRegion *region;
-@property (nonatomic, strong) NSString *timezone;
+@property (nonatomic, copy) NSString *timezone;
 @property (nonatomic, strong) CLLocation *location;
 
 @end
@@ -56,5 +56,6 @@
     NSString *descriptionString = [NSString stringWithFormat:@"<%@: %p> id: %@; name: %@;", self.class, self, self.cityID, self.name];
     return descriptionString;
 }
+
 
 @end

@@ -14,7 +14,7 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *symbol;
 @property (nonatomic, copy) NSString *isoCode;
-@property (nonatomic, assign) NSInteger rate;
+@property (nonatomic, strong) NSNumber *rate;
 
 - (StuartCurrency *)build;
 
@@ -29,6 +29,6 @@
 @property (nonatomic, readonly) NSString *name;
 @property (nonatomic, readonly) NSString *symbol;
 @property (nonatomic, readonly) NSString *isoCode;
-@property (nonatomic, readonly) NSInteger rate;
+@property (nonatomic, readonly) NSNumber *rate;
 
 @end

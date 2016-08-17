@@ -19,7 +19,7 @@
 
 @interface StuartRegion ()
 
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, copy) NSString *name;
 @property (nonatomic, strong) StuartCountry *country;
 
 @end
@@ -49,5 +49,6 @@
     NSString *descriptionString = [NSString stringWithFormat:@"<%@: %p> name: %@;", self.class, self, self.name];
     return descriptionString;
 }
+
 
 @end

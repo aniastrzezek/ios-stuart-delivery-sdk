@@ -15,7 +15,7 @@
 @property (nonatomic, copy) NSString *countryID;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *iso2Code;
-@property (nonatomic, copy) StuartCurrency *defaultCurrency;
+@property (nonatomic, strong) StuartCurrency *defaultCurrency;
 
 - (StuartCountry *)build;
 

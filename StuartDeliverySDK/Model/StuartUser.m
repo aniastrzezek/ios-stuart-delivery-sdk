@@ -20,14 +20,14 @@
 @interface StuartUser ()
 
 @property (nonatomic, strong) NSDate *dateCreated;
-@property (nonatomic, strong) NSString *email;
-@property (nonatomic, strong) NSString *firstname;
-@property (nonatomic, strong) NSString *userID;
-@property (nonatomic, strong) NSString *lastname;
-@property (nonatomic, strong) NSString *lastnameInitial;
-@property (nonatomic, strong) NSString *phone;
-@property (nonatomic, strong) NSString *picturePath;
-@property (nonatomic, strong) NSString *rating;
+@property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy) NSString *firstname;
+@property (nonatomic, copy) NSString *userID;
+@property (nonatomic, copy) NSString *lastname;
+@property (nonatomic, copy) NSString *lastnameInitial;
+@property (nonatomic, copy) NSString *phone;
+@property (nonatomic, copy) NSString *picturePath;
+@property (nonatomic, copy) NSString *rating;
 
 @end
 
@@ -63,5 +63,6 @@
     NSString *descriptionString = [NSString stringWithFormat:@"<%@: %p> id: %@; firstname: %@; lastname: %@;", self.class, self, self.userID, self.firstname, self.lastname];
     return descriptionString;
 }
+
 
 @end

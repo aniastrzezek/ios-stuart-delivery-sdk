@@ -19,9 +19,9 @@ typedef NS_ENUM(NSUInteger, StuartPlaceType) {
 
 @property (nonatomic, copy) NSString *placeID;
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *createdAt;
-@property (nonatomic, copy) NSString *updatedAt;
-@property (nonatomic, copy) StuartAddress *address;
+@property (nonatomic, strong) NSDate *createdAt;
+@property (nonatomic, strong) NSDate *updatedAt;
+@property (nonatomic, strong) StuartAddress *address;
 @property (nonatomic, assign) StuartPlaceType placeType;
 @property (nonatomic, copy) NSString *clientReference;
 @property (nonatomic, copy) NSString *comment;
@@ -45,8 +45,8 @@ typedef NS_ENUM(NSUInteger, StuartPlaceType) {
 
 @property (nonatomic, readonly) NSString *placeID;
 @property (nonatomic, readonly) NSString *name;
-@property (nonatomic, readonly) NSString *createdAt;
-@property (nonatomic, readonly) NSString *updatedAt;
+@property (nonatomic, readonly) NSDate *createdAt;
+@property (nonatomic, readonly) NSDate *updatedAt;
 @property (nonatomic, readonly) StuartAddress *address;
 @property (nonatomic, readonly) StuartPlaceType placeType;
 @property (nonatomic, readonly) NSString *clientReference;

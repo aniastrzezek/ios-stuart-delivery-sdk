@@ -19,9 +19,9 @@
 
 @interface StuartCountry ()
 
-@property (nonatomic, strong) NSString *countryID;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *iso2Code;
+@property (nonatomic, copy) NSString *countryID;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *iso2Code;
 @property (nonatomic, strong) StuartCurrency *defaultCurrency;
 
 @end
@@ -53,5 +53,6 @@
     NSString *descriptionString = [NSString stringWithFormat:@"<%@: %p> id: %@; name: %@;", self.class, self, self.countryID, self.name];
     return descriptionString;
 }
+
 
 @end

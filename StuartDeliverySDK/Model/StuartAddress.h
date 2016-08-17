@@ -16,9 +16,9 @@
 @property (nonatomic, copy) NSString *addressID;
 @property (nonatomic, copy) NSString *street;
 @property (nonatomic, copy) NSString *postcode;
-@property (nonatomic, copy) StuartCity *city;
-@property (nonatomic, copy) CLLocation *location;
-@property (nonatomic, assign) NSInteger *accuracy;
+@property (nonatomic, strong) StuartCity *city;
+@property (nonatomic, strong) CLLocation *location;
+@property (nonatomic, copy) NSNumber *accuracy;
 @property (nonatomic, copy) NSDate *createdAt;
 @property (nonatomic, copy) NSDate *updatedAt;
 
@@ -38,7 +38,7 @@
 @property (nonatomic, readonly) NSString *postcode;
 @property (nonatomic, readonly) StuartCity *city;
 @property (nonatomic, readonly) CLLocation *location;
-@property (nonatomic, readonly) NSInteger *accuracy;
+@property (nonatomic, readonly) NSNumber *accuracy;
 @property (nonatomic, readonly) NSDate *createdAt;
 @property (nonatomic, readonly) NSDate *updatedAt;
 

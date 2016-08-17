@@ -19,10 +19,10 @@
 
 @interface StuartCurrency ()
 
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *symbol;
-@property (nonatomic, strong) NSString *isoCode;
-@property (nonatomic, assign) NSInteger rate;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *symbol;
+@property (nonatomic, copy) NSString *isoCode;
+@property (nonatomic, strong) NSNumber *rate;
 
 @end
 
@@ -53,5 +53,6 @@
     NSString *descriptionString = [NSString stringWithFormat:@"<%@: %p> name: %@; symbol: %@;", self.class, self, self.name, self.symbol];
     return descriptionString;
 }
+
 
 @end

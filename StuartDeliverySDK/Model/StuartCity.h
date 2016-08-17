@@ -16,9 +16,9 @@
 @property (nonatomic, copy) NSString *cityID;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *code;
-@property (nonatomic, copy) StuartRegion *region;
+@property (nonatomic, strong) StuartRegion *region;
 @property (nonatomic, copy) NSString *timezone;
-@property (nonatomic, copy) CLLocation *location;
+@property (nonatomic, strong) CLLocation *location;
 
 - (StuartCity *)build;
 
