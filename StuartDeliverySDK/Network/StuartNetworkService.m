@@ -50,6 +50,22 @@ NSString *const StuartStreetKey = @"street";
 NSString *const StuartSymbolKey = @"symbol";
 NSString *const StuartTimezoneKey = @"timezone";
 NSString *const StuartUpdatedAtKey = @"updatedAt";
+NSString *const StuartAvailableCouriersKey = @"availableCouriers";
+NSString *const StuartBasePriceKey = @"basePrice";
+NSString *const StuartCancellationPriceKey = @"cancellationPrice";
+NSString *const StuartCurrencyKey = @"currency";
+NSString *const StuartDestinationPlaceKey = @"destinationPlace";
+NSString *const StuartDistanceKey = @"distance";
+NSString *const StuartDurationKey = @"duration";
+NSString *const StuartDurationWithTrafficKey = @"durationWithTraffic";
+NSString *const StuartExpireAtKey = @"expireAt";
+NSString *const StuartFinalTotalAmountKey = @"finalTotalAmount";
+NSString *const StuartMinPriceKey = @"minPrice";
+NSString *const StuartOriginalTotalAmountKey = @"originalTotalAmount";
+NSString *const StuartOriginPlaceKey = @"originPlace";
+NSString *const StuartPickupEtaOptimisticKey = @"pickupEtaOptimistic";
+NSString *const StuartPickupEtaPessimisticKey = @"pickupEtaPessimistic";
+NSString *const StuartPolylineKey = @"polyline";
 
 @implementation StuartNetworkService
 

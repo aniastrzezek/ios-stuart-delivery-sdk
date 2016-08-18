@@ -31,6 +31,10 @@
     return [NSURL URLWithString:@"/v1/places" relativeToURL:self.baseURL];    
 }
 
+- (NSURL *)jobQuoteURL {
+    return [NSURL URLWithString:@"v1/jobs/quotes/types" relativeToURL:self.baseURL];
+}
+
 - (NSURL *)baseURL {
     return [NSURL URLWithString:@"https://sandbox-api.stuart.com"];
 }

@@ -51,6 +51,24 @@ extern NSString *const StuartStreetKey;
 extern NSString *const StuartSymbolKey;
 extern NSString *const StuartTimezoneKey;
 extern NSString *const StuartUpdatedAtKey;
+extern NSString *const StuartAvailableCouriersKey;
+extern NSString *const StuartBasePriceKey;
+extern NSString *const StuartCancellationPriceKey;
+extern NSString *const StuartCreatedAtKey;
+extern NSString *const StuartCurrencyKey;
+extern NSString *const StuartDestinationPlaceKey;
+extern NSString *const StuartDistanceKey;
+extern NSString *const StuartDurationKey;
+extern NSString *const StuartDurationWithTrafficKey;
+extern NSString *const StuartExpireAtKey;
+extern NSString *const StuartFinalTotalAmountKey;
+extern NSString *const StuartIdKey;
+extern NSString *const StuartMinPriceKey;
+extern NSString *const StuartOriginalTotalAmountKey;
+extern NSString *const StuartOriginPlaceKey;
+extern NSString *const StuartPickupEtaOptimisticKey;
+extern NSString *const StuartPickupEtaPessimisticKey;
+extern NSString *const StuartPolylineKey;
 
 @interface StuartNetworkService : NSObject
 
