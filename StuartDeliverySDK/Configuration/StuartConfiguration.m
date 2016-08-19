@@ -35,6 +35,10 @@
     return [NSURL URLWithString:@"v1/jobs/quotes/types" relativeToURL:self.baseURL];
 }
 
+- (NSURL *)createJobURL {
+    return [NSURL URLWithString:@"v1/jobs" relativeToURL:self.baseURL];
+}
+
 - (NSURL *)baseURL {
     return [NSURL URLWithString:@"https://sandbox-api.stuart.com"];
 }

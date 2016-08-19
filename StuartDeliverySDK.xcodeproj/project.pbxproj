@@ -57,6 +57,14 @@
 		2CF5480C1D636F2700039EB8 /* NSObject+NilIfNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5480A1D636F2700039EB8 /* NSObject+NilIfNull.m */; };
 		2CF5480F1D63824500039EB8 /* NSError+Stuart.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF5480D1D63824500039EB8 /* NSError+Stuart.h */; };
 		2CF548101D63824500039EB8 /* NSError+Stuart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5480E1D63824500039EB8 /* NSError+Stuart.m */; };
+		8159F9FB1D6783CA00A61F68 /* CreateJobOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8159F9F91D6783CA00A61F68 /* CreateJobOperation.h */; };
+		8159F9FC1D6783CA00A61F68 /* CreateJobOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8159F9FA1D6783CA00A61F68 /* CreateJobOperation.m */; };
+		8159F9FF1D67840600A61F68 /* StuartJobStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 8159F9FD1D67840600A61F68 /* StuartJobStatus.h */; };
+		8159FA001D67840600A61F68 /* StuartJobStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8159F9FE1D67840600A61F68 /* StuartJobStatus.m */; };
+		8159FA031D67849A00A61F68 /* CreateJobRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8159FA011D67849A00A61F68 /* CreateJobRequest.h */; };
+		8159FA041D67849A00A61F68 /* CreateJobRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8159FA021D67849A00A61F68 /* CreateJobRequest.m */; };
+		8159FA071D6787A000A61F68 /* JobStatusMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8159FA051D6787A000A61F68 /* JobStatusMapper.h */; };
+		8159FA081D6787A000A61F68 /* JobStatusMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8159FA061D6787A000A61F68 /* JobStatusMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +120,14 @@
 		2CF5480A1D636F2700039EB8 /* NSObject+NilIfNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NilIfNull.m"; sourceTree = "<group>"; };
 		2CF5480D1D63824500039EB8 /* NSError+Stuart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Stuart.h"; sourceTree = "<group>"; };
 		2CF5480E1D63824500039EB8 /* NSError+Stuart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Stuart.m"; sourceTree = "<group>"; };
+		8159F9F91D6783CA00A61F68 /* CreateJobOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateJobOperation.h; sourceTree = "<group>"; };
+		8159F9FA1D6783CA00A61F68 /* CreateJobOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateJobOperation.m; sourceTree = "<group>"; };
+		8159F9FD1D67840600A61F68 /* StuartJobStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartJobStatus.h; sourceTree = "<group>"; };
+		8159F9FE1D67840600A61F68 /* StuartJobStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartJobStatus.m; sourceTree = "<group>"; };
+		8159FA011D67849A00A61F68 /* CreateJobRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateJobRequest.h; sourceTree = "<group>"; };
+		8159FA021D67849A00A61F68 /* CreateJobRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateJobRequest.m; sourceTree = "<group>"; };
+		8159FA051D6787A000A61F68 /* JobStatusMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobStatusMapper.h; sourceTree = "<group>"; };
+		8159FA061D6787A000A61F68 /* JobStatusMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobStatusMapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +212,8 @@
 				2CF548051D6363AA00039EB8 /* CreatePlaceRequest.m */,
 				2C5CA2CD1D64B4F50062E69B /* JobQuoteRequest.h */,
 				2C5CA2CE1D64B4F50062E69B /* JobQuoteRequest.m */,
+				8159FA011D67849A00A61F68 /* CreateJobRequest.h */,
+				8159FA021D67849A00A61F68 /* CreateJobRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -220,6 +238,8 @@
 				2CF547F91D63621A00039EB8 /* CreatePlaceOperation.m */,
 				2C5CA2C51D64B32D0062E69B /* JobQuoteOperation.h */,
 				2C5CA2C61D64B32D0062E69B /* JobQuoteOperation.m */,
+				8159F9F91D6783CA00A61F68 /* CreateJobOperation.h */,
+				8159F9FA1D6783CA00A61F68 /* CreateJobOperation.m */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -243,6 +263,8 @@
 				2C5CA2C21D64671F0062E69B /* StuartCurrency.m */,
 				2C5CA2C91D64B3920062E69B /* StuartJob.h */,
 				2C5CA2CA1D64B3920062E69B /* StuartJob.m */,
+				8159F9FD1D67840600A61F68 /* StuartJobStatus.h */,
+				8159F9FE1D67840600A61F68 /* StuartJobStatus.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,6 +278,8 @@
 				2CF548011D63627E00039EB8 /* PlaceMapper.m */,
 				2C5CA2D11D64C2950062E69B /* JobsMapper.h */,
 				2C5CA2D21D64C2950062E69B /* JobsMapper.m */,
+				8159FA051D6787A000A61F68 /* JobStatusMapper.h */,
+				8159FA061D6787A000A61F68 /* JobStatusMapper.m */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -283,13 +307,16 @@
 				2CF548061D6363AA00039EB8 /* CreatePlaceRequest.h in Headers */,
 				2C5CA2BF1D6466B50062E69B /* StuartCountry.h in Headers */,
 				2CA9F83B1D5DE721001FCF07 /* StuartConfiguration.h in Headers */,
+				8159FA071D6787A000A61F68 /* JobStatusMapper.h in Headers */,
 				2CF547FA1D63621A00039EB8 /* CreatePlaceOperation.h in Headers */,
 				2CA9F84D1D5DF4FD001FCF07 /* StuartOperation.h in Headers */,
 				2CA9F8481D5DEA34001FCF07 /* SignInRequest.h in Headers */,
 				2CA9F8401D5DE8A3001FCF07 /* StuartRequest.h in Headers */,
 				2C6403B01D5E1EC4006CC0AA /* SignInOperation.h in Headers */,
+				8159F9FB1D6783CA00A61F68 /* CreateJobOperation.h in Headers */,
 				2CF548021D63627E00039EB8 /* PlaceMapper.h in Headers */,
 				2CF5480F1D63824500039EB8 /* NSError+Stuart.h in Headers */,
+				8159F9FF1D67840600A61F68 /* StuartJobStatus.h in Headers */,
 				2CA9F82D1D5DD89E001FCF07 /* StuartClient.h in Headers */,
 				2CF5480B1D636F2700039EB8 /* NSObject+NilIfNull.h in Headers */,
 				2CF547FE1D63623500039EB8 /* StuartPlace.h in Headers */,
@@ -298,6 +325,7 @@
 				2C5CA2CB1D64B3920062E69B /* StuartJob.h in Headers */,
 				2CF547F61D624B0000039EB8 /* UserMapper.h in Headers */,
 				2C5CA2B31D6463EA0062E69B /* StuartAddress.h in Headers */,
+				8159FA031D67849A00A61F68 /* CreateJobRequest.h in Headers */,
 				2CA9F8521D5DF79C001FCF07 /* StuartNetworkService.h in Headers */,
 				2CA9F8221D5D0818001FCF07 /* StuartDeliverySDK.h in Headers */,
 				2C5CA2B71D6465BB0062E69B /* StuartCity.h in Headers */,
@@ -391,14 +419,18 @@
 				2C5CA2BC1D6466790062E69B /* StuartRegion.m in Sources */,
 				2C5CA2D41D64C2950062E69B /* JobsMapper.m in Sources */,
 				2C6403AD1D5E1193006CC0AA /* StuartAuthorization.m in Sources */,
+				8159FA041D67849A00A61F68 /* CreateJobRequest.m in Sources */,
 				2C5CA2CC1D64B3920062E69B /* StuartJob.m in Sources */,
 				2CF547F71D624B0000039EB8 /* UserMapper.m in Sources */,
 				2CA9F8491D5DEA34001FCF07 /* SignInRequest.m in Sources */,
 				2CA9F83C1D5DE721001FCF07 /* StuartConfiguration.m in Sources */,
 				2CA9F8531D5DF79C001FCF07 /* StuartNetworkService.m in Sources */,
 				2CF548031D63627E00039EB8 /* PlaceMapper.m in Sources */,
+				8159FA001D67840600A61F68 /* StuartJobStatus.m in Sources */,
+				8159FA081D6787A000A61F68 /* JobStatusMapper.m in Sources */,
 				2C5CA2C01D6466B50062E69B /* StuartCountry.m in Sources */,
 				2CF547FF1D63623500039EB8 /* StuartPlace.m in Sources */,
+				8159F9FC1D6783CA00A61F68 /* CreateJobOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
