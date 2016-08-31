@@ -65,6 +65,26 @@
 		8159FA041D67849A00A61F68 /* CreateJobRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8159FA021D67849A00A61F68 /* CreateJobRequest.m */; };
 		8159FA071D6787A000A61F68 /* JobStatusMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8159FA051D6787A000A61F68 /* JobStatusMapper.h */; };
 		8159FA081D6787A000A61F68 /* JobStatusMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8159FA061D6787A000A61F68 /* JobStatusMapper.m */; };
+		81D263C51D75F2D4009A7489 /* JobQueryOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263C31D75F2D4009A7489 /* JobQueryOperation.h */; };
+		81D263C61D75F2D4009A7489 /* JobQueryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263C41D75F2D4009A7489 /* JobQueryOperation.m */; };
+		81D263C91D75F3C6009A7489 /* JobQueryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263C71D75F3C6009A7489 /* JobQueryRequest.h */; };
+		81D263CA1D75F3C6009A7489 /* JobQueryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263C81D75F3C6009A7489 /* JobQueryRequest.m */; };
+		81D263CD1D75FE42009A7489 /* StuartDelivery.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263CB1D75FE42009A7489 /* StuartDelivery.h */; };
+		81D263CE1D75FE42009A7489 /* StuartDelivery.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263CC1D75FE42009A7489 /* StuartDelivery.m */; };
+		81D263D11D75FF49009A7489 /* StuartJobPrice.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263CF1D75FF49009A7489 /* StuartJobPrice.h */; };
+		81D263D21D75FF49009A7489 /* StuartJobPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263D01D75FF49009A7489 /* StuartJobPrice.m */; };
+		81D263D51D75FFD1009A7489 /* StuartJobType.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263D31D75FFD1009A7489 /* StuartJobType.h */; };
+		81D263D61D75FFD1009A7489 /* StuartJobType.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263D41D75FFD1009A7489 /* StuartJobType.m */; };
+		81D263D91D760027009A7489 /* StuartStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263D71D760027009A7489 /* StuartStatus.h */; };
+		81D263DA1D760027009A7489 /* StuartStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263D81D760027009A7489 /* StuartStatus.m */; };
+		81D263DD1D760072009A7489 /* StuartOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263DB1D760072009A7489 /* StuartOrder.h */; };
+		81D263DE1D760072009A7489 /* StuartOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263DC1D760072009A7489 /* StuartOrder.m */; };
+		81D263E11D7600D8009A7489 /* StuartPackageType.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263DF1D7600D8009A7489 /* StuartPackageType.h */; };
+		81D263E21D7600D8009A7489 /* StuartPackageType.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263E01D7600D8009A7489 /* StuartPackageType.m */; };
+		81D263E51D760185009A7489 /* StuartTransportType.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263E31D760185009A7489 /* StuartTransportType.h */; };
+		81D263E61D760185009A7489 /* StuartTransportType.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263E41D760185009A7489 /* StuartTransportType.m */; };
+		81D263E91D760242009A7489 /* StuartDeliveryStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263E71D760242009A7489 /* StuartDeliveryStatus.h */; };
+		81D263EA1D760242009A7489 /* StuartDeliveryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263E81D760242009A7489 /* StuartDeliveryStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +148,26 @@
 		8159FA021D67849A00A61F68 /* CreateJobRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateJobRequest.m; sourceTree = "<group>"; };
 		8159FA051D6787A000A61F68 /* JobStatusMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobStatusMapper.h; sourceTree = "<group>"; };
 		8159FA061D6787A000A61F68 /* JobStatusMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobStatusMapper.m; sourceTree = "<group>"; };
+		81D263C31D75F2D4009A7489 /* JobQueryOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobQueryOperation.h; sourceTree = "<group>"; };
+		81D263C41D75F2D4009A7489 /* JobQueryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobQueryOperation.m; sourceTree = "<group>"; };
+		81D263C71D75F3C6009A7489 /* JobQueryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobQueryRequest.h; sourceTree = "<group>"; };
+		81D263C81D75F3C6009A7489 /* JobQueryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobQueryRequest.m; sourceTree = "<group>"; };
+		81D263CB1D75FE42009A7489 /* StuartDelivery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartDelivery.h; sourceTree = "<group>"; };
+		81D263CC1D75FE42009A7489 /* StuartDelivery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartDelivery.m; sourceTree = "<group>"; };
+		81D263CF1D75FF49009A7489 /* StuartJobPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartJobPrice.h; sourceTree = "<group>"; };
+		81D263D01D75FF49009A7489 /* StuartJobPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartJobPrice.m; sourceTree = "<group>"; };
+		81D263D31D75FFD1009A7489 /* StuartJobType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartJobType.h; sourceTree = "<group>"; };
+		81D263D41D75FFD1009A7489 /* StuartJobType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartJobType.m; sourceTree = "<group>"; };
+		81D263D71D760027009A7489 /* StuartStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartStatus.h; sourceTree = "<group>"; };
+		81D263D81D760027009A7489 /* StuartStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartStatus.m; sourceTree = "<group>"; };
+		81D263DB1D760072009A7489 /* StuartOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartOrder.h; sourceTree = "<group>"; };
+		81D263DC1D760072009A7489 /* StuartOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartOrder.m; sourceTree = "<group>"; };
+		81D263DF1D7600D8009A7489 /* StuartPackageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartPackageType.h; sourceTree = "<group>"; };
+		81D263E01D7600D8009A7489 /* StuartPackageType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartPackageType.m; sourceTree = "<group>"; };
+		81D263E31D760185009A7489 /* StuartTransportType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartTransportType.h; sourceTree = "<group>"; };
+		81D263E41D760185009A7489 /* StuartTransportType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartTransportType.m; sourceTree = "<group>"; };
+		81D263E71D760242009A7489 /* StuartDeliveryStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartDeliveryStatus.h; sourceTree = "<group>"; };
+		81D263E81D760242009A7489 /* StuartDeliveryStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartDeliveryStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +254,8 @@
 				2C5CA2CE1D64B4F50062E69B /* JobQuoteRequest.m */,
 				8159FA011D67849A00A61F68 /* CreateJobRequest.h */,
 				8159FA021D67849A00A61F68 /* CreateJobRequest.m */,
+				81D263C71D75F3C6009A7489 /* JobQueryRequest.h */,
+				81D263C81D75F3C6009A7489 /* JobQueryRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -240,6 +282,8 @@
 				2C5CA2C61D64B32D0062E69B /* JobQuoteOperation.m */,
 				8159F9F91D6783CA00A61F68 /* CreateJobOperation.h */,
 				8159F9FA1D6783CA00A61F68 /* CreateJobOperation.m */,
+				81D263C31D75F2D4009A7489 /* JobQueryOperation.h */,
+				81D263C41D75F2D4009A7489 /* JobQueryOperation.m */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -265,6 +309,22 @@
 				2C5CA2CA1D64B3920062E69B /* StuartJob.m */,
 				8159F9FD1D67840600A61F68 /* StuartJobStatus.h */,
 				8159F9FE1D67840600A61F68 /* StuartJobStatus.m */,
+				81D263CB1D75FE42009A7489 /* StuartDelivery.h */,
+				81D263CC1D75FE42009A7489 /* StuartDelivery.m */,
+				81D263CF1D75FF49009A7489 /* StuartJobPrice.h */,
+				81D263D01D75FF49009A7489 /* StuartJobPrice.m */,
+				81D263D31D75FFD1009A7489 /* StuartJobType.h */,
+				81D263D41D75FFD1009A7489 /* StuartJobType.m */,
+				81D263D71D760027009A7489 /* StuartStatus.h */,
+				81D263D81D760027009A7489 /* StuartStatus.m */,
+				81D263DB1D760072009A7489 /* StuartOrder.h */,
+				81D263DC1D760072009A7489 /* StuartOrder.m */,
+				81D263DF1D7600D8009A7489 /* StuartPackageType.h */,
+				81D263E01D7600D8009A7489 /* StuartPackageType.m */,
+				81D263E31D760185009A7489 /* StuartTransportType.h */,
+				81D263E41D760185009A7489 /* StuartTransportType.m */,
+				81D263E71D760242009A7489 /* StuartDeliveryStatus.h */,
+				81D263E81D760242009A7489 /* StuartDeliveryStatus.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,7 +362,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D263DD1D760072009A7489 /* StuartOrder.h in Headers */,
 				2CF547F11D61FE8A00039EB8 /* StuartUser.h in Headers */,
+				81D263C91D75F3C6009A7489 /* JobQueryRequest.h in Headers */,
+				81D263CD1D75FE42009A7489 /* StuartDelivery.h in Headers */,
 				2C5CA2D31D64C2950062E69B /* JobsMapper.h in Headers */,
 				2CF548061D6363AA00039EB8 /* CreatePlaceRequest.h in Headers */,
 				2C5CA2BF1D6466B50062E69B /* StuartCountry.h in Headers */,
@@ -312,11 +375,16 @@
 				2CA9F84D1D5DF4FD001FCF07 /* StuartOperation.h in Headers */,
 				2CA9F8481D5DEA34001FCF07 /* SignInRequest.h in Headers */,
 				2CA9F8401D5DE8A3001FCF07 /* StuartRequest.h in Headers */,
+				81D263C51D75F2D4009A7489 /* JobQueryOperation.h in Headers */,
 				2C6403B01D5E1EC4006CC0AA /* SignInOperation.h in Headers */,
 				8159F9FB1D6783CA00A61F68 /* CreateJobOperation.h in Headers */,
+				81D263D11D75FF49009A7489 /* StuartJobPrice.h in Headers */,
+				81D263E51D760185009A7489 /* StuartTransportType.h in Headers */,
 				2CF548021D63627E00039EB8 /* PlaceMapper.h in Headers */,
 				2CF5480F1D63824500039EB8 /* NSError+Stuart.h in Headers */,
 				8159F9FF1D67840600A61F68 /* StuartJobStatus.h in Headers */,
+				81D263E11D7600D8009A7489 /* StuartPackageType.h in Headers */,
+				81D263D51D75FFD1009A7489 /* StuartJobType.h in Headers */,
 				2CA9F82D1D5DD89E001FCF07 /* StuartClient.h in Headers */,
 				2CF5480B1D636F2700039EB8 /* NSObject+NilIfNull.h in Headers */,
 				2CF547FE1D63623500039EB8 /* StuartPlace.h in Headers */,
@@ -328,10 +396,12 @@
 				8159FA031D67849A00A61F68 /* CreateJobRequest.h in Headers */,
 				2CA9F8521D5DF79C001FCF07 /* StuartNetworkService.h in Headers */,
 				2CA9F8221D5D0818001FCF07 /* StuartDeliverySDK.h in Headers */,
+				81D263D91D760027009A7489 /* StuartStatus.h in Headers */,
 				2C5CA2B71D6465BB0062E69B /* StuartCity.h in Headers */,
 				2C5CA2C71D64B32D0062E69B /* JobQuoteOperation.h in Headers */,
 				2C6403AC1D5E1193006CC0AA /* StuartAuthorization.h in Headers */,
 				2C5CA2BB1D6466790062E69B /* StuartRegion.h in Headers */,
+				81D263E91D760242009A7489 /* StuartDeliveryStatus.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,18 +489,28 @@
 				2C5CA2BC1D6466790062E69B /* StuartRegion.m in Sources */,
 				2C5CA2D41D64C2950062E69B /* JobsMapper.m in Sources */,
 				2C6403AD1D5E1193006CC0AA /* StuartAuthorization.m in Sources */,
+				81D263D61D75FFD1009A7489 /* StuartJobType.m in Sources */,
 				8159FA041D67849A00A61F68 /* CreateJobRequest.m in Sources */,
 				2C5CA2CC1D64B3920062E69B /* StuartJob.m in Sources */,
+				81D263DE1D760072009A7489 /* StuartOrder.m in Sources */,
 				2CF547F71D624B0000039EB8 /* UserMapper.m in Sources */,
 				2CA9F8491D5DEA34001FCF07 /* SignInRequest.m in Sources */,
 				2CA9F83C1D5DE721001FCF07 /* StuartConfiguration.m in Sources */,
+				81D263C61D75F2D4009A7489 /* JobQueryOperation.m in Sources */,
+				81D263CE1D75FE42009A7489 /* StuartDelivery.m in Sources */,
 				2CA9F8531D5DF79C001FCF07 /* StuartNetworkService.m in Sources */,
 				2CF548031D63627E00039EB8 /* PlaceMapper.m in Sources */,
+				81D263DA1D760027009A7489 /* StuartStatus.m in Sources */,
 				8159FA001D67840600A61F68 /* StuartJobStatus.m in Sources */,
 				8159FA081D6787A000A61F68 /* JobStatusMapper.m in Sources */,
+				81D263CA1D75F3C6009A7489 /* JobQueryRequest.m in Sources */,
+				81D263E21D7600D8009A7489 /* StuartPackageType.m in Sources */,
+				81D263D21D75FF49009A7489 /* StuartJobPrice.m in Sources */,
 				2C5CA2C01D6466B50062E69B /* StuartCountry.m in Sources */,
+				81D263EA1D760242009A7489 /* StuartDeliveryStatus.m in Sources */,
 				2CF547FF1D63623500039EB8 /* StuartPlace.m in Sources */,
 				8159F9FC1D6783CA00A61F68 /* CreateJobOperation.m in Sources */,
+				81D263E61D760185009A7489 /* StuartTransportType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

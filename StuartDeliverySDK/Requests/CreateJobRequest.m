@@ -12,14 +12,12 @@
 NSUInteger const StuartMaxPhotoSideLength = 4096;
 
 @interface CreateJobRequest ()
-
 @property (nonatomic, strong) NSString *jobQuoteID;
-
 @end
 
 @implementation CreateJobRequest
 
-- (instancetype)initWithJobQuotID:(NSString *)jobQuoteID {
+- (instancetype)initWithJobQuoteID:(NSString *)jobQuoteID {
     self = [super init];
     
     if (self) {
@@ -29,7 +27,7 @@ NSUInteger const StuartMaxPhotoSideLength = 4096;
 }
 
 - (NSURL *)url {
-    return [StuartConfiguration sharedConfiguration].createJobURL;
+    return [StuartConfiguration sharedConfiguration].jobURL;
 }
 
 - (RequestMethod)method {

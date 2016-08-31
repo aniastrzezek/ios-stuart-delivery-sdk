@@ -35,7 +35,7 @@
     return [NSURL URLWithString:@"v1/jobs/quotes/types" relativeToURL:self.baseURL];
 }
 
-- (NSURL *)createJobURL {
+- (NSURL *)jobURL {
     return [NSURL URLWithString:@"v1/jobs" relativeToURL:self.baseURL];
 }
 

@@ -14,7 +14,7 @@ extern NSUInteger const StuartMaxPhotoSideLength;
 
 @interface CreateJobRequest : NSObject <StuartRequest>
 
-- (instancetype)initWithJobQuotID:(NSString *)jobQuoteID;
+- (instancetype)initWithJobQuoteID:(NSString *)jobQuoteID;
 
 @property (nonatomic, strong) NSString *comment;
 @property (nonatomic, strong) NSString *originComment;

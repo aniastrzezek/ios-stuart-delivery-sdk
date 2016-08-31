@@ -11,11 +11,11 @@
 
 @implementation CreateJobOperation
 
-- (instancetype)initWithJobQuotID:(NSString *)jobQuoteID {
+- (instancetype)initWithJobQuoteID:(NSString *)jobQuoteID {
     self = [super init];
     
     if (self) {
-        self.request = [[CreateJobRequest alloc] initWithJobQuotID:jobQuoteID];
+        self.request = [[CreateJobRequest alloc] initWithJobQuoteID:jobQuoteID];
     }
     return self;
 }

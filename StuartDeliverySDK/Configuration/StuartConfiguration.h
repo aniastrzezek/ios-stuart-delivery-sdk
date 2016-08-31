@@ -15,6 +15,6 @@
 @property (nonatomic, readonly) NSURL *signInURL;
 @property (nonatomic, readonly) NSURL *createPlaceURL;
 @property (nonatomic, readonly) NSURL *jobQuoteURL;
-@property (nonatomic, readonly) NSURL *createJobURL;
+@property (nonatomic, readonly) NSURL *jobURL;
 
 @end

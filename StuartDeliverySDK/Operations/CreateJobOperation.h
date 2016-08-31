@@ -12,7 +12,7 @@
 
 @interface CreateJobOperation : StuartOperation
 
-- (instancetype)initWithJobQuotID:(NSString *)jobQuoteID;
+- (instancetype)initWithJobQuoteID:(NSString *)jobQuoteID;
 
 - (void)setComment:(NSString *)comment;
 - (void)setOriginComment:(NSString *)originComment;

@@ -80,6 +80,11 @@ NSString *const StuartPolylineKey = @"polyline";
     
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            completion(nil, error);
+            return;
+        }
+        
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSArray *errors = json[StuartErrorsKey];
         if (errors.count) {
