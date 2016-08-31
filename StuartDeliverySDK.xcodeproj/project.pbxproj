@@ -181,6 +181,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C5BD7341D76F2F7009EA080 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				2C5CA2B11D6463EA0062E69B /* StuartAddress.h */,
+				2C5CA2B21D6463EA0062E69B /* StuartAddress.m */,
+				2C5CA2B51D6465BB0062E69B /* StuartCity.h */,
+				2C5CA2B61D6465BB0062E69B /* StuartCity.m */,
+				2C5CA2BD1D6466B50062E69B /* StuartCountry.h */,
+				2C5CA2BE1D6466B50062E69B /* StuartCountry.m */,
+				2CF547FC1D63623500039EB8 /* StuartPlace.h */,
+				2CF547FD1D63623500039EB8 /* StuartPlace.m */,
+				2C5CA2B91D6466790062E69B /* StuartRegion.h */,
+				2C5CA2BA1D6466790062E69B /* StuartRegion.m */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		2C5BD7351D76F34B009EA080 /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				2C5CA2C91D64B3920062E69B /* StuartJob.h */,
+				2C5CA2CA1D64B3920062E69B /* StuartJob.m */,
+				81D263CF1D75FF49009A7489 /* StuartJobPrice.h */,
+				81D263D01D75FF49009A7489 /* StuartJobPrice.m */,
+				8159F9FD1D67840600A61F68 /* StuartJobStatus.h */,
+				8159F9FE1D67840600A61F68 /* StuartJobStatus.m */,
+				81D263D31D75FFD1009A7489 /* StuartJobType.h */,
+				81D263D41D75FFD1009A7489 /* StuartJobType.m */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		2C5BD7361D76F380009EA080 /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				81D263CB1D75FE42009A7489 /* StuartDelivery.h */,
+				81D263CC1D75FE42009A7489 /* StuartDelivery.m */,
+				81D263E71D760242009A7489 /* StuartDeliveryStatus.h */,
+				81D263E81D760242009A7489 /* StuartDeliveryStatus.m */,
+			);
+			path = Delivery;
+			sourceTree = "<group>";
+		};
+		2C5BD7371D76F49F009EA080 /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				8159F9F91D6783CA00A61F68 /* CreateJobOperation.h */,
+				8159F9FA1D6783CA00A61F68 /* CreateJobOperation.m */,
+				81D263C31D75F2D4009A7489 /* JobQueryOperation.h */,
+				81D263C41D75F2D4009A7489 /* JobQueryOperation.m */,
+				2C5CA2C51D64B32D0062E69B /* JobQuoteOperation.h */,
+				2C5CA2C61D64B32D0062E69B /* JobQuoteOperation.m */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		2C5BD7381D76F4B4009EA080 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				2CF547F81D63621A00039EB8 /* CreatePlaceOperation.h */,
+				2CF547F91D63621A00039EB8 /* CreatePlaceOperation.m */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
+		2C5BD7391D76F4C1009EA080 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				2C6403AE1D5E1EC4006CC0AA /* SignInOperation.h */,
+				2C6403AF1D5E1EC4006CC0AA /* SignInOperation.m */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		2C5BD73A1D76F4DA009EA080 /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				8159FA011D67849A00A61F68 /* CreateJobRequest.h */,
+				8159FA021D67849A00A61F68 /* CreateJobRequest.m */,
+				81D263C71D75F3C6009A7489 /* JobQueryRequest.h */,
+				81D263C81D75F3C6009A7489 /* JobQueryRequest.m */,
+				2C5CA2CD1D64B4F50062E69B /* JobQuoteRequest.h */,
+				2C5CA2CE1D64B4F50062E69B /* JobQuoteRequest.m */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		2C5BD73B1D76F4E4009EA080 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				2CF548041D6363AA00039EB8 /* CreatePlaceRequest.h */,
+				2CF548051D6363AA00039EB8 /* CreatePlaceRequest.m */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
+		2C5BD73C1D76F4F2009EA080 /* Sign in */ = {
+			isa = PBXGroup;
+			children = (
+				2CA9F8461D5DEA34001FCF07 /* SignInRequest.h */,
+				2CA9F8471D5DEA34001FCF07 /* SignInRequest.m */,
+			);
+			path = "Sign in";
+			sourceTree = "<group>";
+		};
 		2C6403A91D5E117F006CC0AA /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,17 +350,10 @@
 		2CA9F83D1D5DE887001FCF07 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				2C5BD73A1D76F4DA009EA080 /* Job */,
+				2C5BD73B1D76F4E4009EA080 /* Place */,
+				2C5BD73C1D76F4F2009EA080 /* Sign in */,
 				2CA9F83E1D5DE8A3001FCF07 /* StuartRequest.h */,
-				2CA9F8461D5DEA34001FCF07 /* SignInRequest.h */,
-				2CA9F8471D5DEA34001FCF07 /* SignInRequest.m */,
-				2CF548041D6363AA00039EB8 /* CreatePlaceRequest.h */,
-				2CF548051D6363AA00039EB8 /* CreatePlaceRequest.m */,
-				2C5CA2CD1D64B4F50062E69B /* JobQuoteRequest.h */,
-				2C5CA2CE1D64B4F50062E69B /* JobQuoteRequest.m */,
-				8159FA011D67849A00A61F68 /* CreateJobRequest.h */,
-				8159FA021D67849A00A61F68 /* CreateJobRequest.m */,
-				81D263C71D75F3C6009A7489 /* JobQueryRequest.h */,
-				81D263C81D75F3C6009A7489 /* JobQueryRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -272,18 +370,11 @@
 		2CA9F84F1D5DF762001FCF07 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				2C5BD7371D76F49F009EA080 /* Job */,
+				2C5BD7381D76F4B4009EA080 /* Place */,
+				2C5BD7391D76F4C1009EA080 /* Sign In */,
 				2CA9F84B1D5DF4FD001FCF07 /* StuartOperation.h */,
 				2CA9F84C1D5DF4FD001FCF07 /* StuartOperation.m */,
-				2C6403AE1D5E1EC4006CC0AA /* SignInOperation.h */,
-				2C6403AF1D5E1EC4006CC0AA /* SignInOperation.m */,
-				2CF547F81D63621A00039EB8 /* CreatePlaceOperation.h */,
-				2CF547F91D63621A00039EB8 /* CreatePlaceOperation.m */,
-				2C5CA2C51D64B32D0062E69B /* JobQuoteOperation.h */,
-				2C5CA2C61D64B32D0062E69B /* JobQuoteOperation.m */,
-				8159F9F91D6783CA00A61F68 /* CreateJobOperation.h */,
-				8159F9FA1D6783CA00A61F68 /* CreateJobOperation.m */,
-				81D263C31D75F2D4009A7489 /* JobQueryOperation.h */,
-				81D263C41D75F2D4009A7489 /* JobQueryOperation.m */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -291,40 +382,21 @@
 		2CF547EE1D61FE7700039EB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2CF547EF1D61FE8A00039EB8 /* StuartUser.h */,
-				2CF547F01D61FE8A00039EB8 /* StuartUser.m */,
-				2CF547FC1D63623500039EB8 /* StuartPlace.h */,
-				2CF547FD1D63623500039EB8 /* StuartPlace.m */,
-				2C5CA2B11D6463EA0062E69B /* StuartAddress.h */,
-				2C5CA2B21D6463EA0062E69B /* StuartAddress.m */,
-				2C5CA2B51D6465BB0062E69B /* StuartCity.h */,
-				2C5CA2B61D6465BB0062E69B /* StuartCity.m */,
-				2C5CA2B91D6466790062E69B /* StuartRegion.h */,
-				2C5CA2BA1D6466790062E69B /* StuartRegion.m */,
-				2C5CA2BD1D6466B50062E69B /* StuartCountry.h */,
-				2C5CA2BE1D6466B50062E69B /* StuartCountry.m */,
+				2C5BD7341D76F2F7009EA080 /* Address */,
+				2C5BD7361D76F380009EA080 /* Delivery */,
+				2C5BD7351D76F34B009EA080 /* Job */,
 				2C5CA2C11D64671F0062E69B /* StuartCurrency.h */,
 				2C5CA2C21D64671F0062E69B /* StuartCurrency.m */,
-				2C5CA2C91D64B3920062E69B /* StuartJob.h */,
-				2C5CA2CA1D64B3920062E69B /* StuartJob.m */,
-				8159F9FD1D67840600A61F68 /* StuartJobStatus.h */,
-				8159F9FE1D67840600A61F68 /* StuartJobStatus.m */,
-				81D263CB1D75FE42009A7489 /* StuartDelivery.h */,
-				81D263CC1D75FE42009A7489 /* StuartDelivery.m */,
-				81D263CF1D75FF49009A7489 /* StuartJobPrice.h */,
-				81D263D01D75FF49009A7489 /* StuartJobPrice.m */,
-				81D263D31D75FFD1009A7489 /* StuartJobType.h */,
-				81D263D41D75FFD1009A7489 /* StuartJobType.m */,
-				81D263D71D760027009A7489 /* StuartStatus.h */,
-				81D263D81D760027009A7489 /* StuartStatus.m */,
 				81D263DB1D760072009A7489 /* StuartOrder.h */,
 				81D263DC1D760072009A7489 /* StuartOrder.m */,
 				81D263DF1D7600D8009A7489 /* StuartPackageType.h */,
 				81D263E01D7600D8009A7489 /* StuartPackageType.m */,
+				81D263D71D760027009A7489 /* StuartStatus.h */,
+				81D263D81D760027009A7489 /* StuartStatus.m */,
 				81D263E31D760185009A7489 /* StuartTransportType.h */,
 				81D263E41D760185009A7489 /* StuartTransportType.m */,
-				81D263E71D760242009A7489 /* StuartDeliveryStatus.h */,
-				81D263E81D760242009A7489 /* StuartDeliveryStatus.m */,
+				2CF547EF1D61FE8A00039EB8 /* StuartUser.h */,
+				2CF547F01D61FE8A00039EB8 /* StuartUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
