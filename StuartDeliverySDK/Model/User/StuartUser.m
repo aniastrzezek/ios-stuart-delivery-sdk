@@ -19,15 +19,21 @@
 
 @interface StuartUser ()
 
-@property (nonatomic, strong) NSDate *dateCreated;
+@property (nonatomic, copy) NSString *userID;
 @property (nonatomic, copy) NSString *email;
 @property (nonatomic, copy) NSString *firstname;
-@property (nonatomic, copy) NSString *userID;
 @property (nonatomic, copy) NSString *lastname;
 @property (nonatomic, copy) NSString *lastnameInitial;
+@property (nonatomic, copy) NSString *companyName;
 @property (nonatomic, copy) NSString *phone;
 @property (nonatomic, copy) NSString *picturePath;
+@property (nonatomic, copy) NSString *picturePathDerived;
 @property (nonatomic, copy) NSString *rating;
+@property (nonatomic, strong) StuartBillingAccount *billingAccount;
+@property (nonatomic, strong) StuartClientAccount *clientAccount;
+@property (nonatomic, strong) StuartReferralCode *referral;
+@property (nonatomic, copy) NSArray <StuartReferral *> *referrals;
+@property (nonatomic, strong) NSDate *dateCreated;
 
 @end
 
@@ -43,9 +49,15 @@
         self.userID = builder.userID;
         self.lastname = builder.lastname;
         self.lastnameInitial = builder.lastnameInitial;
+        self.companyName = builder.companyName;
         self.phone = builder.phone;
         self.picturePath = builder.picturePath;
+        self.picturePathDerived = builder.picturePathDerived;
         self.rating = builder.rating;
+        self.billingAccount = builder.billingAccount;
+        self.clientAccount = builder.clientAccount;
+        self.referral = builder.referral;
+        self.referrals = builder.referrals;
     }
     return self;
 }

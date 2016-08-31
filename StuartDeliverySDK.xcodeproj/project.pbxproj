@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5BD7401D770597009EA080 /* StuartBillingAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5BD73E1D770597009EA080 /* StuartBillingAccount.h */; };
+		2C5BD7411D770597009EA080 /* StuartBillingAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD73F1D770597009EA080 /* StuartBillingAccount.m */; };
+		2C5BD7441D7709F8009EA080 /* StuartClientAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5BD7421D7709F8009EA080 /* StuartClientAccount.h */; };
+		2C5BD7451D7709F8009EA080 /* StuartClientAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD7431D7709F8009EA080 /* StuartClientAccount.m */; };
+		2C5BD7481D770DDF009EA080 /* StuartReferral.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5BD7461D770DDF009EA080 /* StuartReferral.h */; };
+		2C5BD7491D770DDF009EA080 /* StuartReferral.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD7471D770DDF009EA080 /* StuartReferral.m */; };
+		2C5BD74C1D770E06009EA080 /* StuartReferralCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5BD74A1D770E06009EA080 /* StuartReferralCode.h */; };
+		2C5BD74D1D770E06009EA080 /* StuartReferralCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD74B1D770E06009EA080 /* StuartReferralCode.m */; };
 		2C5CA2B31D6463EA0062E69B /* StuartAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5CA2B11D6463EA0062E69B /* StuartAddress.h */; };
 		2C5CA2B41D6463EA0062E69B /* StuartAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CA2B21D6463EA0062E69B /* StuartAddress.m */; };
 		2C5CA2B71D6465BB0062E69B /* StuartCity.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5CA2B51D6465BB0062E69B /* StuartCity.h */; };
@@ -88,6 +96,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C5BD73E1D770597009EA080 /* StuartBillingAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartBillingAccount.h; sourceTree = "<group>"; };
+		2C5BD73F1D770597009EA080 /* StuartBillingAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartBillingAccount.m; sourceTree = "<group>"; };
+		2C5BD7421D7709F8009EA080 /* StuartClientAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartClientAccount.h; sourceTree = "<group>"; };
+		2C5BD7431D7709F8009EA080 /* StuartClientAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartClientAccount.m; sourceTree = "<group>"; };
+		2C5BD7461D770DDF009EA080 /* StuartReferral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartReferral.h; sourceTree = "<group>"; };
+		2C5BD7471D770DDF009EA080 /* StuartReferral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartReferral.m; sourceTree = "<group>"; };
+		2C5BD74A1D770E06009EA080 /* StuartReferralCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartReferralCode.h; sourceTree = "<group>"; };
+		2C5BD74B1D770E06009EA080 /* StuartReferralCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartReferralCode.m; sourceTree = "<group>"; };
 		2C5CA2B11D6463EA0062E69B /* StuartAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartAddress.h; sourceTree = "<group>"; };
 		2C5CA2B21D6463EA0062E69B /* StuartAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartAddress.m; sourceTree = "<group>"; };
 		2C5CA2B51D6465BB0062E69B /* StuartCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartCity.h; sourceTree = "<group>"; };
@@ -286,6 +302,23 @@
 			path = "Sign in";
 			sourceTree = "<group>";
 		};
+		2C5BD73D1D77055E009EA080 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				2C5BD73E1D770597009EA080 /* StuartBillingAccount.h */,
+				2C5BD73F1D770597009EA080 /* StuartBillingAccount.m */,
+				2C5BD7421D7709F8009EA080 /* StuartClientAccount.h */,
+				2C5BD7431D7709F8009EA080 /* StuartClientAccount.m */,
+				2CF547EF1D61FE8A00039EB8 /* StuartUser.h */,
+				2CF547F01D61FE8A00039EB8 /* StuartUser.m */,
+				2C5BD7461D770DDF009EA080 /* StuartReferral.h */,
+				2C5BD7471D770DDF009EA080 /* StuartReferral.m */,
+				2C5BD74A1D770E06009EA080 /* StuartReferralCode.h */,
+				2C5BD74B1D770E06009EA080 /* StuartReferralCode.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		2C6403A91D5E117F006CC0AA /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +415,7 @@
 		2CF547EE1D61FE7700039EB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C5BD73D1D77055E009EA080 /* User */,
 				2C5BD7341D76F2F7009EA080 /* Address */,
 				2C5BD7361D76F380009EA080 /* Delivery */,
 				2C5BD7351D76F34B009EA080 /* Job */,
@@ -395,8 +429,6 @@
 				81D263D81D760027009A7489 /* StuartStatus.m */,
 				81D263E31D760185009A7489 /* StuartTransportType.h */,
 				81D263E41D760185009A7489 /* StuartTransportType.m */,
-				2CF547EF1D61FE8A00039EB8 /* StuartUser.h */,
-				2CF547F01D61FE8A00039EB8 /* StuartUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -441,6 +473,7 @@
 				2C5CA2D31D64C2950062E69B /* JobsMapper.h in Headers */,
 				2CF548061D6363AA00039EB8 /* CreatePlaceRequest.h in Headers */,
 				2C5CA2BF1D6466B50062E69B /* StuartCountry.h in Headers */,
+				2C5BD74C1D770E06009EA080 /* StuartReferralCode.h in Headers */,
 				2CA9F83B1D5DE721001FCF07 /* StuartConfiguration.h in Headers */,
 				8159FA071D6787A000A61F68 /* JobStatusMapper.h in Headers */,
 				2CF547FA1D63621A00039EB8 /* CreatePlaceOperation.h in Headers */,
@@ -460,8 +493,10 @@
 				2CA9F82D1D5DD89E001FCF07 /* StuartClient.h in Headers */,
 				2CF5480B1D636F2700039EB8 /* NSObject+NilIfNull.h in Headers */,
 				2CF547FE1D63623500039EB8 /* StuartPlace.h in Headers */,
+				2C5BD7481D770DDF009EA080 /* StuartReferral.h in Headers */,
 				2C5CA2C31D64671F0062E69B /* StuartCurrency.h in Headers */,
 				2C5CA2CF1D64B4F50062E69B /* JobQuoteRequest.h in Headers */,
+				2C5BD7441D7709F8009EA080 /* StuartClientAccount.h in Headers */,
 				2C5CA2CB1D64B3920062E69B /* StuartJob.h in Headers */,
 				2CF547F61D624B0000039EB8 /* UserMapper.h in Headers */,
 				2C5CA2B31D6463EA0062E69B /* StuartAddress.h in Headers */,
@@ -469,6 +504,7 @@
 				2CA9F8521D5DF79C001FCF07 /* StuartNetworkService.h in Headers */,
 				2CA9F8221D5D0818001FCF07 /* StuartDeliverySDK.h in Headers */,
 				81D263D91D760027009A7489 /* StuartStatus.h in Headers */,
+				2C5BD7401D770597009EA080 /* StuartBillingAccount.h in Headers */,
 				2C5CA2B71D6465BB0062E69B /* StuartCity.h in Headers */,
 				2C5CA2C71D64B32D0062E69B /* JobQuoteOperation.h in Headers */,
 				2C6403AC1D5E1193006CC0AA /* StuartAuthorization.h in Headers */,
@@ -561,11 +597,13 @@
 				2C5CA2BC1D6466790062E69B /* StuartRegion.m in Sources */,
 				2C5CA2D41D64C2950062E69B /* JobsMapper.m in Sources */,
 				2C6403AD1D5E1193006CC0AA /* StuartAuthorization.m in Sources */,
+				2C5BD74D1D770E06009EA080 /* StuartReferralCode.m in Sources */,
 				81D263D61D75FFD1009A7489 /* StuartJobType.m in Sources */,
 				8159FA041D67849A00A61F68 /* CreateJobRequest.m in Sources */,
 				2C5CA2CC1D64B3920062E69B /* StuartJob.m in Sources */,
 				81D263DE1D760072009A7489 /* StuartOrder.m in Sources */,
 				2CF547F71D624B0000039EB8 /* UserMapper.m in Sources */,
+				2C5BD7411D770597009EA080 /* StuartBillingAccount.m in Sources */,
 				2CA9F8491D5DEA34001FCF07 /* SignInRequest.m in Sources */,
 				2CA9F83C1D5DE721001FCF07 /* StuartConfiguration.m in Sources */,
 				81D263C61D75F2D4009A7489 /* JobQueryOperation.m in Sources */,
@@ -575,7 +613,9 @@
 				81D263DA1D760027009A7489 /* StuartStatus.m in Sources */,
 				8159FA001D67840600A61F68 /* StuartJobStatus.m in Sources */,
 				8159FA081D6787A000A61F68 /* JobStatusMapper.m in Sources */,
+				2C5BD7451D7709F8009EA080 /* StuartClientAccount.m in Sources */,
 				81D263CA1D75F3C6009A7489 /* JobQueryRequest.m in Sources */,
+				2C5BD7491D770DDF009EA080 /* StuartReferral.m in Sources */,
 				81D263E21D7600D8009A7489 /* StuartPackageType.m in Sources */,
 				81D263D21D75FF49009A7489 /* StuartJobPrice.m in Sources */,
 				2C5CA2C01D6466B50062E69B /* StuartCountry.m in Sources */,
