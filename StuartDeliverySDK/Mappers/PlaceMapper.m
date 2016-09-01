@@ -49,7 +49,6 @@
         builder.address = address;
     }];
     
-    
     return place;
 }
 

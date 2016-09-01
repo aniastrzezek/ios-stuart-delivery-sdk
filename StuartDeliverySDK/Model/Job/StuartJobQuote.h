@@ -1,5 +1,5 @@
 //
-//  StuartJob.h
+//  StuartJobQuote.h
 //  StuartDeliverySDK
 //
 //  Created by Anna Strzezek on 17/08/2016.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "StuartPlace.h"
 #import "StuartCurrency.h"
-@class StuartJob;
+@class StuartJobQuote;
 
 typedef NS_ENUM(NSUInteger, StuartJobTransportType) {
     StuartJobTransportTypeWalker = 1,
@@ -20,9 +20,9 @@ typedef NS_ENUM(NSUInteger, StuartJobTransportType) {
     StuartJobTransportTypeVan
 };
 
-@interface StuartJobBuilder : NSObject
+@interface StuartJobQuoteBuilder : NSObject
 
-@property (nonatomic, copy) NSString *jobID;
+@property (nonatomic, copy) NSString *jobQuoteID;
 @property (nonatomic, strong) StuartPlace *destinationPlace;
 @property (nonatomic, strong) StuartPlace *originPlace;
 @property (nonatomic, assign) StuartJobTransportType transportType;
@@ -42,17 +42,17 @@ typedef NS_ENUM(NSUInteger, StuartJobTransportType) {
 @property (nonatomic, strong) NSDate *createdAt;
 @property (nonatomic, strong) NSDate *expireAt;
 
-- (StuartJob *)build;
+- (StuartJobQuote *)build;
 
 @end
 
-@interface StuartJob : NSObject <NSCopying>
+@interface StuartJobQuote : NSObject <NSCopying>
 
-- (instancetype)initWithBuilder:(StuartJobBuilder *)builder;
+- (instancetype)initWithBuilder:(StuartJobQuoteBuilder *)builder;
 
-+ (instancetype)jobWithBlock:(void (^)(StuartJobBuilder *))builderBlock;
++ (instancetype)jobWithBlock:(void (^)(StuartJobQuoteBuilder *))builderBlock;
 
-@property (nonatomic, readonly) NSString *jobID;
+@property (nonatomic, readonly) NSString *jobQuoteID;
 @property (nonatomic, readonly) StuartPlace *destinationPlace;
 @property (nonatomic, readonly) StuartPlace *originPlace;
 @property (nonatomic, readonly) StuartJobTransportType transportType;

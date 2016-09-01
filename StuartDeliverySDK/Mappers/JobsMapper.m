@@ -8,7 +8,7 @@
 
 #import "JobsMapper.h"
 #import "StuartNetworkService.h"
-#import "StuartJob.h"
+#import "StuartJobQuote.h"
 #import "NSObject+NilIfNull.h"
 #import "PlaceMapper.h"
 
@@ -29,7 +29,7 @@
             [self configureCurrencyBuilder:builder withData:currencyData];
         }];
         
-        StuartJob *job = [StuartJob jobWithBlock:^(StuartJobBuilder *builder) {
+        StuartJobQuote *job = [StuartJobQuote jobWithBlock:^(StuartJobQuoteBuilder *builder) {
             builder.transportType = transportType.integerValue;
             builder.currency = currency;
 
@@ -39,8 +39,8 @@
     }
     
     NSArray *sortedJobs = [jobs sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
-        StuartJobTransportType first = ((StuartJob *)obj1).transportType;
-        StuartJobTransportType second = ((StuartJob *)obj2).transportType;
+        StuartJobTransportType first = ((StuartJobQuote *)obj1).transportType;
+        StuartJobTransportType second = ((StuartJobQuote *)obj2).transportType;
 
         if (first < second) {
             return NSOrderedAscending;
@@ -63,11 +63,11 @@
     builder.symbol = [currencyData[StuartSymbolKey] nilIfNull];
 }
 
-+ (void)configureJobBuilder:(StuartJobBuilder *)builder withData:(NSDictionary *)jobData {
++ (void)configureJobBuilder:(StuartJobQuoteBuilder *)builder withData:(NSDictionary *)jobData {
     builder.originPlace = [PlaceMapper placeWithData:jobData[StuartOriginPlaceKey]];
     builder.destinationPlace = [PlaceMapper placeWithData:jobData[StuartDestinationPlaceKey]];
     
-    builder.jobID = [jobData[StuartIDKey] nilIfNull];
+    builder.jobQuoteID = [jobData[StuartIDKey] nilIfNull];
     builder.distance = [jobData[StuartDistanceKey] nilIfNull];
     builder.duration = [jobData[StuartDurationKey] nilIfNull];
     builder.durationWithTraffic = [jobData[StuartDurationWithTrafficKey] nilIfNull];

@@ -8,6 +8,7 @@
 
 #import "JobQueryOperation.h"
 #import "JobQueryRequest.h"
+#import "JobStatusMapper.h"
 
 @implementation JobQueryOperation
 
@@ -23,8 +24,8 @@
 - (void)start {
     [super start];
     [self.networkService requestWithURL:self.request.url method:self.request.method parameters:self.request.parameters completion:^(NSDictionary *json, NSError *error) {
-        //        NSArray *jobs = error ? nil : [JobsMapper jobsWithData:json];
-        self.completion(nil, error);
+        StuartJobStatus *jobStatus = [JobStatusMapper jobStatusWithData:json];
+        self.completion(jobStatus, error);
     }];
 }
 

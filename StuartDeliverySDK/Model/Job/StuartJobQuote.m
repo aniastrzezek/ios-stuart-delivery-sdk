@@ -6,20 +6,20 @@
 //  Copyright © 2016 Anna Strzeżek. All rights reserved.
 //
 
-#import "StuartJob.h"
+#import "StuartJobQuote.h"
 
-@implementation StuartJobBuilder
+@implementation StuartJobQuoteBuilder
 
-- (StuartJob *)build {
-    return [[StuartJob alloc] initWithBuilder:self];
+- (StuartJobQuote *)build {
+    return [[StuartJobQuote alloc] initWithBuilder:self];
 }
 
 @end
 
 
-@interface StuartJob ()
+@interface StuartJobQuote ()
 
-@property (nonatomic, copy) NSString *jobID;
+@property (nonatomic, copy) NSString *jobQuoteID;
 @property (nonatomic, strong) StuartPlace *destinationPlace;
 @property (nonatomic, strong) StuartPlace *originPlace;
 @property (nonatomic, assign) StuartJobTransportType transportType;
@@ -41,13 +41,13 @@
 
 @end
 
-@implementation StuartJob
+@implementation StuartJobQuote
 
-- (instancetype)initWithBuilder:(StuartJobBuilder *)builder {
+- (instancetype)initWithBuilder:(StuartJobQuoteBuilder *)builder {
     self = [super init];
     
     if (self) {
-        self.jobID = builder.jobID;
+        self.jobQuoteID = builder.jobQuoteID;
         self.destinationPlace = builder.destinationPlace;
         self.originPlace = builder.originPlace;
         self.transportType = builder.transportType;
@@ -70,8 +70,8 @@
     return self;
 }
 
-+ (instancetype)jobWithBlock:(void (^)(StuartJobBuilder *))builderBlock {
-    StuartJobBuilder *builder = [StuartJobBuilder new];
++ (instancetype)jobWithBlock:(void (^)(StuartJobQuoteBuilder *))builderBlock {
+    StuartJobQuoteBuilder *builder = [StuartJobQuoteBuilder new];
     builderBlock(builder);
     return [builder build];
 }
@@ -91,21 +91,21 @@
         return YES;
     }
     
-    if (!object || ![object isKindOfClass:[StuartJob class]]) {
+    if (!object || ![object isKindOfClass:[StuartJobQuote class]]) {
         return NO;
     }
     
     return [self isEqualToJob:object];
 }
 
-- (BOOL)isEqualToJob:(StuartJob *)job {
+- (BOOL)isEqualToJob:(StuartJobQuote *)job {
     if (self == job) {
         return YES;
     }
     if (job == nil) {
         return NO;
     }
-    if (self.jobID != job.jobID && ![self.jobID isEqualToString:job.jobID]) {
+    if (self.jobQuoteID != job.jobQuoteID && ![self.jobQuoteID isEqualToString:job.jobQuoteID]) {
         return NO;
     }
     
@@ -113,14 +113,14 @@
 }
 
 - (NSUInteger)hash {
-    return self.jobID.hash;
+    return self.jobQuoteID.hash;
 }
 
 
 #pragma mark - Helpers
 
 - (NSString *)description {
-    NSString *descriptionString = [NSString stringWithFormat:@"<%@: %p> id: %@; origin: %@; destination: %@; transportType: %lu;", self.class, self, self.jobID, self.originPlace.address, self.destinationPlace.address, (unsigned long)self.transportType];
+    NSString *descriptionString = [NSString stringWithFormat:@"<%@: %p> id: %@; origin: %@; destination: %@; transportType: %lu;", self.class, self, self.jobQuoteID, self.originPlace.address, self.destinationPlace.address, (unsigned long)self.transportType];
     return descriptionString;
 }
 
