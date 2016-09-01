@@ -7,6 +7,7 @@
 //
 
 #import "StuartOperation.h"
+#import "NSError+Stuart.h"
 
 @interface StuartOperation ()
 @property (nonatomic, strong) StuartNetworkService *networkService;
@@ -23,5 +24,15 @@
     return self;
 }
 
+- (void)startWithURL:(NSURL *)url method:(RequestMethod)method parameters:(NSDictionary *)parameters completion:(void (^)(NSDictionary *, NSError *))completion {
+    [super start];
+    [self.networkService requestWithURL:url method:method parameters:parameters completion:^(NSDictionary *json, NSError *error) {
+        if (error.code == StuartErrorCodeInvalidGrant) {
+            
+        } else {
+            completion(json, error);
+        }
+    }];
+}
 
 @end

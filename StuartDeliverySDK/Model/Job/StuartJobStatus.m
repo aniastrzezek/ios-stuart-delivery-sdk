@@ -18,7 +18,7 @@
 
 @interface StuartJobStatus ()
 
-@property (nonatomic, copy) NSString *jobStatusID;
+@property (nonatomic, strong) NSNumber *jobStatusID;
 @property (nonatomic, strong) StuartUser *client;
 @property (nonatomic, copy) NSString *status;
 @property (nonatomic, strong) StuartStatus *lastStatus;

@@ -12,7 +12,8 @@ extern NSString *const StuartErrorDomain;
 
 typedef NS_ENUM(NSUInteger, StuartErrorCode) {
     StuartErrorCodeOutOfRange = 400004,
-    StuartErrorCodeAddressNotSpecific = 422001
+    StuartErrorCodeAddressNotSpecific = 422001,
+    StuartErrorCodeInvalidGrant = 401001
 };
 
 @interface NSError (Stuart)

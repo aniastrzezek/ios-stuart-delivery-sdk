@@ -13,6 +13,7 @@
 + (instancetype)sharedAuthorization;
 
 @property (nonatomic, strong) NSString *token;
+@property (nonatomic, strong) NSString *refreshToken;
 
 - (void)removeToken;
 

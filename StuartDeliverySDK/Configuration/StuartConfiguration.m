@@ -39,6 +39,10 @@
     return [NSURL URLWithString:@"v1/jobs" relativeToURL:self.baseURL];
 }
 
+- (NSURL *)refreshTokenURL {
+    return [NSURL URLWithString:@"oauth/v2/token" relativeToURL:self.baseURL];
+}
+
 - (NSURL *)baseURL {
     return [NSURL URLWithString:@"https://sandbox-api.stuart.com"];
 }

@@ -22,8 +22,7 @@
 }
 
 - (void)start {
-    [super start];
-    [self.networkService requestWithURL:self.request.url method:self.request.method parameters:self.request.parameters completion:^(NSDictionary *json, NSError *error) {
+    [super startWithURL:self.request.url method:self.request.method parameters:self.request.parameters completion:^(NSDictionary *json, NSError *error) {
         StuartJobStatus *jobStatus = [JobStatusMapper jobStatusWithData:json];
         self.completion(jobStatus, error);
     }];

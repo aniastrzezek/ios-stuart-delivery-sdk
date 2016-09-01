@@ -89,6 +89,10 @@
 		81D263D61D75FFD1009A7489 /* StuartJobType.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263D41D75FFD1009A7489 /* StuartJobType.m */; };
 		81D263E91D760242009A7489 /* StuartStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D263E71D760242009A7489 /* StuartStatus.h */; };
 		81D263EA1D760242009A7489 /* StuartStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D263E81D760242009A7489 /* StuartStatus.m */; };
+		81E583191D7884D6001D9AEF /* RefreshTokenOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E583171D7884D6001D9AEF /* RefreshTokenOperation.h */; };
+		81E5831A1D7884D6001D9AEF /* RefreshTokenOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E583181D7884D6001D9AEF /* RefreshTokenOperation.m */; };
+		81E5831D1D788577001D9AEF /* RefreshTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E5831B1D788577001D9AEF /* RefreshTokenRequest.h */; };
+		81E5831E1D788577001D9AEF /* RefreshTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5831C1D788577001D9AEF /* RefreshTokenRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +180,10 @@
 		81D263D41D75FFD1009A7489 /* StuartJobType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartJobType.m; sourceTree = "<group>"; };
 		81D263E71D760242009A7489 /* StuartStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuartStatus.h; sourceTree = "<group>"; };
 		81D263E81D760242009A7489 /* StuartStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuartStatus.m; sourceTree = "<group>"; };
+		81E583171D7884D6001D9AEF /* RefreshTokenOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshTokenOperation.h; sourceTree = "<group>"; };
+		81E583181D7884D6001D9AEF /* RefreshTokenOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshTokenOperation.m; sourceTree = "<group>"; };
+		81E5831B1D788577001D9AEF /* RefreshTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshTokenRequest.h; sourceTree = "<group>"; };
+		81E5831C1D788577001D9AEF /* RefreshTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshTokenRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +271,8 @@
 			children = (
 				2C6403AE1D5E1EC4006CC0AA /* SignInOperation.h */,
 				2C6403AF1D5E1EC4006CC0AA /* SignInOperation.m */,
+				81E583171D7884D6001D9AEF /* RefreshTokenOperation.h */,
+				81E583181D7884D6001D9AEF /* RefreshTokenOperation.m */,
 			);
 			path = "Sign In";
 			sourceTree = "<group>";
@@ -294,6 +304,8 @@
 			children = (
 				2CA9F8461D5DEA34001FCF07 /* SignInRequest.h */,
 				2CA9F8471D5DEA34001FCF07 /* SignInRequest.m */,
+				81E5831B1D788577001D9AEF /* RefreshTokenRequest.h */,
+				81E5831C1D788577001D9AEF /* RefreshTokenRequest.m */,
 			);
 			path = "Sign in";
 			sourceTree = "<group>";
@@ -466,6 +478,7 @@
 				2CF547FA1D63621A00039EB8 /* CreatePlaceOperation.h in Headers */,
 				2CA9F84D1D5DF4FD001FCF07 /* StuartOperation.h in Headers */,
 				2C5BD7541D7808A1009EA080 /* StuartDriverDeviceLocation.h in Headers */,
+				81E5831D1D788577001D9AEF /* RefreshTokenRequest.h in Headers */,
 				2CA9F8481D5DEA34001FCF07 /* SignInRequest.h in Headers */,
 				2C5BD7501D7802F3009EA080 /* StuartDriver.h in Headers */,
 				2CA9F8401D5DE8A3001FCF07 /* StuartRequest.h in Headers */,
@@ -494,6 +507,7 @@
 				2C5CA2B71D6465BB0062E69B /* StuartCity.h in Headers */,
 				2C5CA2C71D64B32D0062E69B /* JobQuoteOperation.h in Headers */,
 				2C6403AC1D5E1193006CC0AA /* StuartAuthorization.h in Headers */,
+				81E583191D7884D6001D9AEF /* RefreshTokenOperation.h in Headers */,
 				2C5CA2BB1D6466790062E69B /* StuartRegion.h in Headers */,
 				81D263E91D760242009A7489 /* StuartStatus.h in Headers */,
 			);
@@ -600,9 +614,11 @@
 				8159FA081D6787A000A61F68 /* JobStatusMapper.m in Sources */,
 				2C5BD7451D7709F8009EA080 /* StuartClientAccount.m in Sources */,
 				81D263CA1D75F3C6009A7489 /* JobQueryRequest.m in Sources */,
+				81E5831E1D788577001D9AEF /* RefreshTokenRequest.m in Sources */,
 				2C5BD7491D770DDF009EA080 /* StuartReferral.m in Sources */,
 				81D263D21D75FF49009A7489 /* StuartJobPrice.m in Sources */,
 				2C5CA2C01D6466B50062E69B /* StuartCountry.m in Sources */,
+				81E5831A1D7884D6001D9AEF /* RefreshTokenOperation.m in Sources */,
 				81D263EA1D760242009A7489 /* StuartStatus.m in Sources */,
 				2C5BD7511D7802F3009EA080 /* StuartDriver.m in Sources */,
 				2CF547FF1D63623500039EB8 /* StuartPlace.m in Sources */,

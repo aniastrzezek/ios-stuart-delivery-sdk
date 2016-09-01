@@ -9,6 +9,7 @@
 #import "StuartAuthorization.h"
 
 NSString *const StuartAuthorizationTokenKey = @"StuartAuthorizationToken";
+NSString *const StuartAuthorizationRefreshTokenKey = @"StuartRefreshToken";
 
 @implementation StuartAuthorization
 
@@ -30,8 +31,17 @@ NSString *const StuartAuthorizationTokenKey = @"StuartAuthorizationToken";
     [[NSUserDefaults standardUserDefaults] setObject:token forKey:StuartAuthorizationTokenKey];
 }
 
+- (NSString *)refreshToken {
+    return [[NSUserDefaults standardUserDefaults] objectForKey:StuartAuthorizationRefreshTokenKey];
+}
+
+- (void)setRefreshToken:(NSString *)token {
+    [[NSUserDefaults standardUserDefaults] setObject:token forKey:StuartAuthorizationRefreshTokenKey];
+}
+
 - (void)removeToken {
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:StuartAuthorizationTokenKey];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:StuartAuthorizationRefreshTokenKey];
 }
 
 @end

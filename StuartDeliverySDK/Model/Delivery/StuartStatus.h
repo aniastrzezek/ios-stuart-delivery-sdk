@@ -12,8 +12,9 @@
 
 typedef NS_ENUM (NSUInteger, StatusType) {
     StatusTypeNew = 1,
-    StatusTypeDelivering = 2,
-    StatusTypeInProgress = 3
+    StatusTypeDelivering,
+    StatusTypeInProgress,
+    StatusTypeFinished,
 };
 
 @interface StuartStatusBuilder : NSObject

@@ -16,5 +16,6 @@
 @property (nonatomic, readonly) NSURL *createPlaceURL;
 @property (nonatomic, readonly) NSURL *jobQuoteURL;
 @property (nonatomic, readonly) NSURL *jobURL;
+@property (nonatomic, readonly) NSURL *refreshTokenURL;
 
 @end

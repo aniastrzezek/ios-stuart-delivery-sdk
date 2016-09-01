@@ -17,7 +17,7 @@
 
 @interface StuartJobStatusBuilder : NSObject
 
-@property (nonatomic, copy) NSString *jobStatusID;
+@property (nonatomic, strong) NSNumber *jobStatusID;
 @property (nonatomic, strong) StuartUser *client;
 @property (nonatomic, copy) NSString *status;
 @property (nonatomic, strong) StuartStatus *lastStatus;
@@ -55,7 +55,7 @@
 
 + (instancetype)jobStatusWithBlock:(void (^)(StuartJobStatusBuilder *))builderBlock;
 
-@property (nonatomic, readonly) NSString *jobStatusID;
+@property (nonatomic, readonly) NSNumber *jobStatusID;
 @property (nonatomic, readonly) StuartUser *client;
 @property (nonatomic, readonly) NSString *status;
 @property (nonatomic, readonly) StuartStatus *lastStatus;

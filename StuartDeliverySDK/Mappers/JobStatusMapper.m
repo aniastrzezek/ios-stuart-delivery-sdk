@@ -24,7 +24,7 @@
     NSDictionary *destinationPlaceData = data[StuartDestinationPlaceKey];
     NSDictionary *originPlaceData = data[StuartOriginPlaceKey];
     NSDictionary *lastStatusData = data[StuartLastStatusKey];
-    NSDictionary *currentDeliveryData = data[StuartLastStatusKey];
+    NSDictionary *currentDeliveryData = data[StuartCurrentDeliveryKey];
     NSDictionary *finalJobPriceData = data[StuartFinalJobPriceKey];
 
     StuartUser *client = [UserMapper userWithData:clientData];
@@ -158,7 +158,7 @@
     builder.createdAt = [dateFormatter dateFromString:[data[StuartCreatedAtKey] nilIfNull]];
     builder.statusType = [data[StuartDeliveryStatusTypeKey][StuartIDKey] integerValue];
 
-    NSDictionary *driverDeviceLocationData = data[StuartDriverDeviceLocationTypeKey];
+    NSDictionary *driverDeviceLocationData = [data[StuartDriverDeviceLocationTypeKey] nilIfNull];
     StuartDriverDeviceLocation *driverDeviceLocation = [StuartDriverDeviceLocation driverDeviceLocationWithBlock:^(StuartDriverDeviceLocationBuilder *locationBuilder) {
         [self configureDriverDeviceLocationBuilder:locationBuilder withData:driverDeviceLocationData];
     }];

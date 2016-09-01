@@ -1,23 +1,22 @@
 //
-//  SignInOperation.m
+//  RefreshTokenOperation.m
 //  StuartDeliverySDK
 //
-//  Created by Anna Strzezek on 12/08/2016.
+//  Created by Anna Strzezek on 01/09/16.
 //  Copyright © 2016 Anna Strzeżek. All rights reserved.
 //
 
-#import "SignInOperation.h"
-#import "SignInRequest.h"
-#import "UserMapper.h"
+#import "RefreshTokenOperation.h"
+#import "RefreshTokenRequest.h"
 #import "StuartAuthorization.h"
 
-@implementation SignInOperation
+@implementation RefreshTokenOperation
 
 - (instancetype)initWithUsername:(NSString *)username password:(NSString *)password {
     self = [super init];
     
     if (self) {
-        self.request = [[SignInRequest alloc] initWithUsername:username password:password];
+        self.request = [[RefreshTokenRequest alloc] initWithUsername:username password:password];
     }
     return self;
 }
@@ -27,11 +26,7 @@
     [self.networkService requestWithURL:self.request.url method:self.request.method parameters:self.request.parameters completion:^(NSDictionary *json, NSError *error) {
         [StuartAuthorization sharedAuthorization].token = json[StuartTokenKey];
         [StuartAuthorization sharedAuthorization].refreshToken = json[StuartRefreshTokenKey];
-        
-        StuartUser *user = error ? nil : [UserMapper userWithData:json];
-        self.completion(user, error);
     }];
 }
-
 
 @end
