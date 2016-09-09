@@ -20,12 +20,12 @@
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZ";
 
-    NSDictionary *clientData = data[StuartClientKey];
-    NSDictionary *destinationPlaceData = data[StuartDestinationPlaceKey];
-    NSDictionary *originPlaceData = data[StuartOriginPlaceKey];
-    NSDictionary *lastStatusData = data[StuartLastStatusKey];
-    NSDictionary *currentDeliveryData = data[StuartCurrentDeliveryKey];
-    NSDictionary *finalJobPriceData = data[StuartFinalJobPriceKey];
+    NSDictionary *clientData = [data[StuartClientKey] nilIfNull];
+    NSDictionary *destinationPlaceData = [data[StuartDestinationPlaceKey] nilIfNull];
+    NSDictionary *originPlaceData = [data[StuartOriginPlaceKey] nilIfNull];
+    NSDictionary *lastStatusData = [data[StuartLastStatusKey] nilIfNull];
+    NSDictionary *currentDeliveryData = [data[StuartCurrentDeliveryKey] nilIfNull];
+    NSDictionary *finalJobPriceData = [data[StuartFinalJobPriceKey] nilIfNull];
 
     StuartUser *client = [UserMapper userWithData:clientData];
     StuartPlace *destinationPlace = [PlaceMapper placeWithData:destinationPlaceData];
@@ -94,11 +94,11 @@
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZ";
     
-    NSDictionary *lastDeliveryStatusData = data[StuartLastDeliveryStatusKey];
-    NSDictionary *deliveryStatusDeliveredData = data[StuartDeliveryStatusDeliveredKey];
-    NSDictionary *deliveryStatusPickedData = data[StuartDeliveryStatusPickedKey];
-    NSDictionary *currencyData = data[StuartCurrencyKey];
-    NSDictionary *driverData = data[StuartDriverKey];
+    NSDictionary *lastDeliveryStatusData = [data[StuartLastDeliveryStatusKey] nilIfNull];
+    NSDictionary *deliveryStatusDeliveredData = [data[StuartDeliveryStatusDeliveredKey] nilIfNull];
+    NSDictionary *deliveryStatusPickedData = [data[StuartDeliveryStatusPickedKey] nilIfNull];
+    NSDictionary *currencyData = [data[StuartCurrencyKey] nilIfNull];
+    NSDictionary *driverData = [data[StuartDriverKey] nilIfNull];
     
     StuartStatus *lastDeliveryStatus = [StuartStatus deliveryStatusWithBlock:^(StuartStatusBuilder *statusBuilder) {
         [self configureDeliveryStatusBuilder:statusBuilder withData:lastDeliveryStatusData];
