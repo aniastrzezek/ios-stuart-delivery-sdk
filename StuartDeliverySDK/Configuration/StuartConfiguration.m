@@ -44,7 +44,16 @@
 }
 
 - (NSURL *)baseURL {
+    return self.sandbox ? self.sandboxBaseURL : self.productionBaseURL;
+}
+
+- (NSURL *)sandboxBaseURL {
     return [NSURL URLWithString:@"https://sandbox-api.stuart.com"];
 }
+
+- (NSURL *)productionBaseURL {
+    return [NSURL URLWithString:@"https://api.stuart.com"];
+}
+
 
 @end

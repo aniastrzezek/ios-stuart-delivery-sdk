@@ -12,6 +12,8 @@
 
 + (instancetype)sharedConfiguration;
 
+@property (nonatomic, assign) BOOL sandbox;
+
 @property (nonatomic, readonly) NSURL *signInURL;
 @property (nonatomic, readonly) NSURL *createPlaceURL;
 @property (nonatomic, readonly) NSURL *jobQuoteURL;

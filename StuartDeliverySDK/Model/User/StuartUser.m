@@ -8,7 +8,6 @@
 
 #import "StuartUser.h"
 
-
 @implementation StuartUserBuilder
 
 - (StuartUser *)build {
