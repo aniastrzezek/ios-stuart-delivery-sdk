@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "StuartDeliverySDK"
-  s.version      = "0.0.3"
+  s.version      = "1.0.0"
   s.summary      = "iOS SDK for Stuart delivery."
   s.description  = <<-DESC
                   An iOS library that helps using Stuart delivery API.
